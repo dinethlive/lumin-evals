@@ -1,0 +1,73 @@
+[
+  {
+    "label": "Great Conjunction",
+    "instantUtc": "2020-12-21T18:20:00Z",
+    "measure": "separation",
+    "bodies": [
+      "Jupiter",
+      "Saturn"
+    ],
+    "ideal": 0,
+    "boundDegrees": 0.2,
+    "engineFigure": "0.037°"
+  },
+  {
+    "label": "Venus transit",
+    "instantUtc": "2012-06-06T01:29:00Z",
+    "measure": "separation",
+    "bodies": [
+      "Venus",
+      "Sun"
+    ],
+    "ideal": 0,
+    "boundDegrees": 0.15,
+    "engineFigure": "0.043°"
+  },
+  {
+    "label": "Mercury transit",
+    "instantUtc": "2019-11-11T15:20:00Z",
+    "measure": "separation",
+    "bodies": [
+      "Mercury",
+      "Sun"
+    ],
+    "ideal": 0,
+    "boundDegrees": 0.15,
+    "engineFigure": "0.065°"
+  },
+  {
+    "label": "Mars opposition",
+    "instantUtc": "2020-10-13T23:20:00Z",
+    "measure": "elongation",
+    "bodies": [
+      "Mars",
+      "Sun"
+    ],
+    "ideal": 180,
+    "boundDegrees": 0.2,
+    "engineFigure": "179.93°"
+  },
+  {
+    "label": "Solar eclipse",
+    "instantUtc": "2017-08-21T18:26:00Z",
+    "measure": "separation",
+    "bodies": [
+      "Moon",
+      "Sun"
+    ],
+    "ideal": 0,
+    "boundDegrees": 0.15,
+    "engineFigure": "0.035°"
+  },
+  {
+    "label": "Vernal equinox",
+    "instantUtc": "2000-03-20T07:35:00Z",
+    "measure": "tropical-longitude",
+    "bodies": [
+      "Sun"
+    ],
+    "ideal": 0,
+    "boundDegrees": 0.01,
+    "engineFigure": "359.9998°"
+  }
+]

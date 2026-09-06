@@ -1,0 +1,770 @@
+{
+  "findings": [
+    {
+      "id": "F001",
+      "title": "Sade Sati phase walker collapses on Saturn's retrograde re-entry",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": []
+    },
+    {
+      "id": "F002",
+      "title": "Sade Sati verdict hardcodes the reading its cited source refutes",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q004"
+      ]
+    },
+    {
+      "id": "F003",
+      "title": "Vedha rules transcribed correctly, then tagged as KP by the book that rejects them",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q013",
+        "Q017"
+      ]
+    },
+    {
+      "id": "F004",
+      "title": "Transit star lord and sub lord have swapped roles in get_transit_analysis",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q001",
+        "Q007",
+        "Q017"
+      ]
+    },
+    {
+      "id": "F005",
+      "title": "Sade Sati intensity multipliers are unsourced and keyed to planet identity",
+      "kind": "unsourced",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q012"
+      ]
+    },
+    {
+      "id": "F006",
+      "title": "The engine cites two source trees and neither exists",
+      "kind": "provenance",
+      "status": "open",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q015",
+        "Q018",
+        "Q019"
+      ]
+    },
+    {
+      "id": "F007",
+      "title": "Transit timing opens a window on star OR sub, where the corpus requires both",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q002",
+        "Q007",
+        "Q011"
+      ]
+    },
+    {
+      "id": "F008",
+      "title": "Lagna minute-prediction gates on the sub lord alone and never reads the star lord",
+      "kind": "gap",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q003",
+        "Q011"
+      ]
+    },
+    {
+      "id": "F009",
+      "title": "The weather compactor claimed any response with a top-level windows array, and reduced get_sade_sati_intensity to 19 characters",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": []
+    },
+    {
+      "id": "F010",
+      "title": "An electional event was named from a misread heading, so partnership meetings elected on scholarship-letter houses",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q006",
+        "Q022"
+      ]
+    },
+    {
+      "id": "F011",
+      "title": "A natal retrograde star lord was treated as denial, where KP treats it as delay",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q001",
+        "Q019"
+      ]
+    },
+    {
+      "id": "F012",
+      "title": "The timing cascade advertises a Lagna tier it does not implement",
+      "kind": "gap",
+      "status": "open",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q002"
+      ]
+    },
+    {
+      "id": "F013",
+      "title": "Triple confirmation checks star and sub but never the sign",
+      "kind": "gap",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q002",
+        "Q003",
+        "Q011",
+        "Q019",
+        "Q020"
+      ]
+    },
+    {
+      "id": "F014",
+      "title": "The KP ayanamsa was 85 arcminutes wrong, so 78% of all sub lords were one position off",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q003",
+        "Q005",
+        "Q010",
+        "Q011",
+        "Q019"
+      ]
+    },
+    {
+      "id": "F015",
+      "title": "The test suite mostly asserts that code ran, not that it is right",
+      "kind": "defect",
+      "status": "open",
+      "raised": "2026-08-13",
+      "questions": []
+    },
+    {
+      "id": "F016",
+      "title": "The litigation verdict computed the sixth house, printed it, and then left it out of the comparison",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q004",
+        "Q010",
+        "Q021"
+      ]
+    },
+    {
+      "id": "F017",
+      "title": "\"'Legal Disputes / Court' is an occurrence gate that reads like an outcome gate, and puts the opponent's house on the required side\"",
+      "kind": "defect",
+      "status": "open",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q004"
+      ]
+    },
+    {
+      "id": "F018",
+      "title": "Ashtama Sani came back as a bare date range, which is the exact output four Reader 5 chapters exist to reject",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q004"
+      ]
+    },
+    {
+      "id": "F019",
+      "title": "The progeny denial group was missing the 10th, and the adoption rule was filed under miscarriage",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q007",
+        "Q010",
+        "Q021"
+      ]
+    },
+    {
+      "id": "F020",
+      "title": "Punarphoo has a Reader 4 chapter to itself as a marriage rule, and the engine computed it only inside the electional scan",
+      "kind": "gap",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q008"
+      ]
+    },
+    {
+      "id": "F021",
+      "title": "The Porutham rejection was right and almost every fact in it was wrong, and the six points KSK substitutes were missing",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": []
+    },
+    {
+      "id": "F022",
+      "title": "Mars Dosha used one reference point of three and counted houses where the corpus says signs",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q009",
+        "Q017"
+      ]
+    },
+    {
+      "id": "F023",
+      "title": "KSK's replacement for Mars Dosha is implemented, and its raw form fires on 100% of charts",
+      "kind": "gap",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q009"
+      ]
+    },
+    {
+      "id": "F024",
+      "title": "The engine could say whether marriage is promised and when, and nothing about why it is late",
+      "kind": "gap",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q008"
+      ]
+    },
+    {
+      "id": "F025",
+      "title": "The spouse description was read from a planet the corpus never names, on the authority of a file that does not exist",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": []
+    },
+    {
+      "id": "F026",
+      "title": "The four-level order is corpus-confirmed, its conditional on L2 and L4 is now settled and implemented, and the two uncited weight tables are unified",
+      "kind": "contradiction",
+      "status": "fixed",
+      "raised": "2026-08-13",
+      "questions": [
+        "Q010"
+      ]
+    },
+    {
+      "id": "F027",
+      "title": "bunfig.toml set a 30s test timeout, bun test ignored it silently, and CI has been running at 5s",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-14",
+      "questions": []
+    },
+    {
+      "id": "F028",
+      "title": "The querent's horary number is computed, reported, and then discarded. It never reaches the chart.",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-14",
+      "questions": [
+        "Q016"
+      ]
+    },
+    {
+      "id": "F029",
+      "title": "The level weight table is declared 23 times, and the file that says it is the only one is wrong",
+      "kind": "unsourced",
+      "status": "fixed",
+      "raised": "2026-08-17",
+      "questions": [
+        "Q012",
+        "Q013",
+        "Q015"
+      ]
+    },
+    {
+      "id": "F030",
+      "title": "The ruling-planet role ladder invents weights and silently picks one of three corpus orders",
+      "kind": "unsourced",
+      "status": "fixed",
+      "raised": "2026-08-18",
+      "questions": [
+        "Q012",
+        "Q018"
+      ]
+    },
+    {
+      "id": "F031",
+      "title": "Thirteen definitions of STRONG, five scales, one vocabulary, and KP has no number at all",
+      "kind": "unsourced",
+      "status": "open",
+      "raised": "2026-08-18",
+      "questions": [
+        "Q012",
+        "Q014",
+        "Q017"
+      ]
+    },
+    {
+      "id": "F032",
+      "title": "The hospitalization house group carried the cure house and dropped the body",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-18",
+      "questions": [
+        "Q013",
+        "Q014",
+        "Q021"
+      ]
+    },
+    {
+      "id": "F033",
+      "title": "A sign-occupancy panel and an uncodified transplant method were both tagged kp",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-08-18",
+      "questions": [
+        "Q013",
+        "Q015",
+        "Q017",
+        "Q018"
+      ]
+    },
+    {
+      "id": "F034",
+      "title": "The cure window timed a cure without ever asking whether there is one",
+      "kind": "gap",
+      "status": "fixed",
+      "raised": "2026-08-18",
+      "questions": [
+        "Q013"
+      ]
+    },
+    {
+      "id": "F035",
+      "title": "The cuspal sub lord verdict was gated on dignity, retrogression and combustion, which KP discards by name",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-19",
+      "questions": [
+        "Q003",
+        "Q009",
+        "Q019",
+        "Q020"
+      ]
+    },
+    {
+      "id": "F036",
+      "title": "get_aspects_and_strength ships Parashari graha drishti and a Parashari strength score, tagged kp, in the foundation group",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-08-21",
+      "questions": [
+        "Q019"
+      ]
+    },
+    {
+      "id": "F037",
+      "title": "The Four Step Theory was credited to Hariharan on four surfaces; it is Sunil Gondhalekar's",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-08-21",
+      "questions": [
+        "Q019"
+      ]
+    },
+    {
+      "id": "F038",
+      "title": "The MCP compactor deleted 92% of the promise response, including every reason for the verdict",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-21",
+      "questions": [
+        "Q019"
+      ]
+    },
+    {
+      "id": "F039",
+      "title": "The promise verdict denied on ONE denial house, on a rule no corpus page states",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": [
+        "Q014",
+        "Q015",
+        "Q020"
+      ]
+    },
+    {
+      "id": "F040",
+      "title": "Chronic Illness carried the body house in its denial group and an electional cure set as its negation",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": [
+        "Q014",
+        "Q021"
+      ]
+    },
+    {
+      "id": "F041",
+      "title": "The event resolver matched inside a word, so \"employment\" resolved to Unemployment",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": []
+    },
+    {
+      "id": "F042",
+      "title": "career_possible was decided by the obstruction houses and never read the career houses it computed",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": [
+        "Q015",
+        "Q020"
+      ]
+    },
+    {
+      "id": "F043",
+      "title": "Horary retrograde rules were gating natal career promises in two tools",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": [
+        "Q015"
+      ]
+    },
+    {
+      "id": "F044",
+      "title": "Job Loss / Termination carried the general loss triad, not the end-of-service group",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": [
+        "Q015",
+        "Q017",
+        "Q018",
+        "Q021",
+        "Q022"
+      ]
+    },
+    {
+      "id": "F045",
+      "title": "normalize360 was not the identity for in-range values, and KP decides on boundaries",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": [
+        "Q016"
+      ]
+    },
+    {
+      "id": "F046",
+      "title": "Ashtakavarga is computed in houses and read as signs, so 93.6% of its sign scores are wrong",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": [
+        "Q017"
+      ]
+    },
+    {
+      "id": "F047",
+      "title": "Shadbala ships the six classical names over six invented 0-100 scores, and one of them is inverted",
+      "kind": "unsourced",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": []
+    },
+    {
+      "id": "F048",
+      "title": "Vimsopaka drops two of the sixteen vargas and scores the rest on an invented dignity ladder",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": []
+    },
+    {
+      "id": "F049",
+      "title": "Kemadruma is structurally unreportable, its cancellation fires on 100% of charts that reach it",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": [
+        "Q017"
+      ]
+    },
+    {
+      "id": "F050",
+      "title": "Chara dasha runs zodiacally for every chart, and the karaka scheme calls a live dispute \"the authentic method\"",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": []
+    },
+    {
+      "id": "F051",
+      "title": "Two of fifteen saham formulas are attested, one of those disagrees with the engine, and Yasas admits its own substitution",
+      "kind": "unsourced",
+      "status": "open",
+      "raised": "2026-08-22",
+      "questions": [
+        "Q022"
+      ]
+    },
+    {
+      "id": "F052",
+      "title": "Parivartana is classified by the houses the planets occupy, where Phaladeepika classifies by the houses they own",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": []
+    },
+    {
+      "id": "F053",
+      "title": "Graha yuddha names the winner by dignity and lower longitude, where Brihat Samhita names it by latitude",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": []
+    },
+    {
+      "id": "F054",
+      "title": "Kalsarpa ships as a Severe dosha with named remedies, and no classical text contains it",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": [
+        "Q017"
+      ]
+    },
+    {
+      "id": "F055",
+      "title": "The weather family blends three traditions under one absent citation and ships all four tools tagged kp",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-08-22",
+      "questions": [
+        "Q018"
+      ]
+    },
+    {
+      "id": "F056",
+      "title": "The weather verdict's rain and drought house sets match no stated convention, and put the 6th on the dry side",
+      "kind": "unsourced",
+      "status": "open",
+      "raised": "2026-08-22",
+      "questions": [
+        "Q018"
+      ]
+    },
+    {
+      "id": "F057",
+      "title": "The coverage ladder issued DENIED on an invented threshold, for a cuspal sub lord that does reach the required group",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-28",
+      "questions": [
+        "Q021"
+      ]
+    },
+    {
+      "id": "F058",
+      "title": "Business Start read two cusps and took the weaker, where KSK names the 7th cusp sub lord and the houses 2, 7 and 10",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-28",
+      "questions": [
+        "Q021"
+      ]
+    },
+    {
+      "id": "F059",
+      "title": "The star-lord denial route is the cuspal sub lord's own significations counted twice, and where it is not, it reaches two stellar hops above the cusp",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-29",
+      "questions": [
+        "Q020"
+      ]
+    },
+    {
+      "id": "F060",
+      "title": "The oncology promise is gated on an invented star-lord \"cure bias\", and the comment says so",
+      "kind": "defect",
+      "status": "open",
+      "raised": "2026-08-29",
+      "questions": [
+        "Q020"
+      ]
+    },
+    {
+      "id": "F061",
+      "title": "KP states a grammar for building a denial group, and 71 of the 78 event rows do not follow it",
+      "kind": "provenance",
+      "status": "partly-fixed",
+      "raised": "2026-08-29",
+      "questions": [
+        "Q021"
+      ]
+    },
+    {
+      "id": "F062",
+      "title": "The nakshatra was recomputed from the longitude instead of read off the row, and contradicted its own star lord on 9 of the 249 horary numbers",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-29",
+      "questions": []
+    },
+    {
+      "id": "F063",
+      "title": "\"\\\"Stationary\\\" was an invented state with three incompatible definitions, and the question KP actually asks, when does the planet turn direct, had no answer at all\"",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-29",
+      "questions": []
+    },
+    {
+      "id": "F064",
+      "title": "Every audit script subtracted the UTC offset twice, so the 48-chart spread was never the spread it named",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-08-29",
+      "questions": []
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q001",
+      "title": "Is a natal retrograde star lord a DENIAL, or only a delay?",
+      "status": "answered"
+    },
+    {
+      "id": "Q002",
+      "title": "Where does the Saturn / Jupiter / Sun / Moon tier structure come from?",
+      "status": "answered"
+    },
+    {
+      "id": "Q003",
+      "title": "Lagna transit: \"Constellation or sub\", or star and sub and sub-sub?",
+      "status": "answered"
+    },
+    {
+      "id": "Q004",
+      "title": "Is the Sade Sati benefic house set wider than 10 and 11?",
+      "status": "answered"
+    },
+    {
+      "id": "Q005",
+      "title": "What are KSK's own published ayanamsa values, year by year?",
+      "status": "answered"
+    },
+    {
+      "id": "Q006",
+      "title": "For each electional house group, what event does KP literature attach it to?",
+      "status": "answered"
+    },
+    {
+      "id": "Q007",
+      "title": "Horary \"when will they arrive\", and the progeny reading. Does the engine cover either properly?",
+      "status": "answered"
+    },
+    {
+      "id": "Q008",
+      "title": "Punarphoo: which houses must Saturn occupy? The corpus sentence has its numbers missing.",
+      "status": "answered"
+    },
+    {
+      "id": "Q009",
+      "title": "KSK replaces Mars Dosha with a sub-lord test. Which houses does it name?",
+      "status": "answered"
+    },
+    {
+      "id": "Q010",
+      "title": "Do occupants and owners stop signifying a house when their own star is tenanted?",
+      "status": "answered"
+    },
+    {
+      "id": "Q011",
+      "title": "Must a ripe transit occupy the significator's SIGN as well as its star and sub?",
+      "status": "answered"
+    },
+    {
+      "id": "Q012",
+      "title": "Does KP assign a number to anything, or is every score in this engine an invention?",
+      "status": "answered"
+    },
+    {
+      "id": "Q013",
+      "title": "Is there a medical KP, and is this engine's health surface actually it?",
+      "status": "answered"
+    },
+    {
+      "id": "Q014",
+      "title": "Does ONE denial house deny a matter, or does the whole denial group have to be signified?",
+      "status": "answered"
+    },
+    {
+      "id": "Q015",
+      "title": "What is the KP method for profession, and how much of this engine's career surface is it?",
+      "status": "answered"
+    },
+    {
+      "id": "Q016",
+      "title": "Exactly how does a KP horary number become a chart, and what does the number fix?",
+      "status": "answered"
+    },
+    {
+      "id": "Q017",
+      "title": "Where is chapter and verse for the 53 tools whose tradition is not in the corpus?",
+      "status": "answered"
+    },
+    {
+      "id": "Q018",
+      "title": "Is there a KP weather method, and whose is the one this engine ships?",
+      "status": "answered"
+    },
+    {
+      "id": "Q019",
+      "title": "What does KP FORBID, and what does it discard from Parashari?",
+      "status": "answered"
+    },
+    {
+      "id": "Q020",
+      "title": "When the cuspal sub lord's STAR LORD signifies a denial house, is that a different verdict from the sub lord doing it?",
+      "status": "answered"
+    },
+    {
+      "id": "Q021",
+      "title": "For the events KSK does not state a house group for, what do the KP successors state, and which variant is most attested?",
+      "status": "answered"
+    },
+    {
+      "id": "Q022",
+      "title": "What are the Tajika saham formulas as *Tajika Neelakanthi* states them, and which of the engine's fifteen match?",
+      "status": "open"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "lumin-evals",
+  "version": "0.1.0",
+  "description": "Reproducible checks on the astrology engine behind lumin.guru",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "author": "dinethlive",
+  "repository": "github:dinethlive/lumin-evals",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "evals": "node evals/run.mjs",
+    "docs": "node scripts/build-docs.mjs"
+  }
+}

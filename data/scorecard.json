@@ -1,0 +1,80 @@
+{
+  "exportedOn": "2026-09-06",
+  "site": "https://lumin.guru/benchmarks",
+  "layers": [
+    {
+      "layer": "Julian day",
+      "oracle": "Meeus, Astronomical Algorithms, example 7.a",
+      "result": "Exact"
+    },
+    {
+      "layer": "Delta T",
+      "oracle": "Published historical values, 1900 to 2020",
+      "result": "Within tolerance"
+    },
+    {
+      "layer": "Nutation and obliquity",
+      "oracle": "IAU 1980 against Meeus example 22.a, and the Placidus condition",
+      "result": "Holds"
+    },
+    {
+      "layer": "Planets, VSOP87",
+      "oracle": "5 observed sky events with published timestamps",
+      "result": "Worst 0.065 degrees"
+    },
+    {
+      "layer": "Moon, ELP2000",
+      "oracle": "The total solar eclipse of 2017-08-21",
+      "result": "0.035 degrees"
+    },
+    {
+      "layer": "Ayanamsa, KP Old",
+      "oracle": "4 published Reader I table rows and 2 corpus values",
+      "result": "Within 1 arcminute"
+    },
+    {
+      "layer": "Ayanamsa, KP New",
+      "oracle": "2 published values",
+      "result": "To the arcsecond"
+    },
+    {
+      "layer": "Placidus house cusps",
+      "oracle": "Their own defining equation, re-derived independently at 6 latitudes",
+      "result": "0.16 arcseconds, worst case"
+    },
+    {
+      "layer": "The 249-sub table",
+      "oracle": "2 corpus arcs, printed to the second",
+      "result": "Exact"
+    },
+    {
+      "layer": "Sub-sub lords, 2,241 spans",
+      "oracle": "1 printed arc, 1 printed four-level chain in a second book, and the tiling invariant",
+      "result": "Exact"
+    },
+    {
+      "layer": "Vimshottari dasha balance",
+      "oracle": "2 worked derivations and a 9-row ready reckoner, Reader 1",
+      "result": "Exact"
+    }
+  ],
+  "placidusWorstErrorArcsec": 0.16,
+  "findings": {
+    "total": 64,
+    "fixed": 55,
+    "partlyFixed": 1,
+    "open": 8
+  },
+  "research": {
+    "questions": 22,
+    "answered": 21,
+    "keywords": 629,
+    "reports": 22,
+    "reportWords": 86954
+  },
+  "corpusPages": 5045,
+  "tests": {
+    "files": 124,
+    "count": 1794
+  }
+}

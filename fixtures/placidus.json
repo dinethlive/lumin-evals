@@ -1,0 +1,25 @@
+{
+  "note": "There is no observation to check a house cusp against, so the cusps are checked against the equation that defines a Placidus cusp, re-derived with independent trigonometry, and against the invariants every quadrant system must satisfy. The equation check needs the sidereal time and obliquity, which the hosted API does not return, so the runner checks the invariants only; the equation is pinned in the engine's own suite at 0.16 arcseconds worst case across these six places.",
+  "condition": {
+    "cusp11": "H = 360 - (1/3) * DSA",
+    "cusp12": "H = 360 - (2/3) * DSA",
+    "cusp2": "H = 360 - DSA - (1/3) * NSA",
+    "cusp3": "H = 360 - DSA - (2/3) * NSA",
+    "where": "H is the cusp's hour angle from the RAMC, DSA and NSA its diurnal and nocturnal semi-arcs for its own declination at the latitude."
+  },
+  "invariants": [
+    "The MC's right ascension equals the RAMC exactly.",
+    "Each cusp is 180 degrees from its opposite: 1 and 7, 2 and 8, and so on.",
+    "The twelve cusps advance monotonically and close on exactly 360 degrees.",
+    "At the equator every house is exactly 30 degrees of right ascension.",
+    "Beyond the polar circle the engine refuses rather than returning a plausible number."
+  ],
+  "places": [
+    { "label": "Chennai", "datetimeLocal": "1990-07-15T05:00:00", "utcOffsetMinutes": 330, "latitude": 13.0827, "longitude": 80.2707 },
+    { "label": "London", "datetimeLocal": "1970-03-12T06:30:00", "utcOffsetMinutes": 0, "latitude": 51.5074, "longitude": -0.1278 },
+    { "label": "Sydney", "datetimeLocal": "2001-11-23T14:15:00", "utcOffsetMinutes": 660, "latitude": -33.8688, "longitude": 151.2093 },
+    { "label": "Reykjavik", "datetimeLocal": "1985-06-01T00:00:00", "utcOffsetMinutes": 0, "latitude": 64.1466, "longitude": -21.9426 },
+    { "label": "Quito, on the equator", "datetimeLocal": "2000-01-01T12:00:00", "utcOffsetMinutes": -300, "latitude": 0.0, "longitude": -78.4678 },
+    { "label": "Cape Town", "datetimeLocal": "1966-09-09T21:00:00", "utcOffsetMinutes": 120, "latitude": -33.9249, "longitude": 18.4241 }
+  ]
+}

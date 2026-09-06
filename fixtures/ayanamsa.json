@@ -1,0 +1,13 @@
+{
+  "type": "kp",
+  "toleranceArcminutes": 1,
+  "note": "KP Old. The published table is printed to the arcminute, so one arcminute either side is the widest tolerance the source supports. The engine is asked for the ayanamsa at 00:00 UT on each date.",
+  "rows": [
+    { "date": "1900-01-01", "degrees": 22, "arcminutes": 22, "source": "Krishnamurti, KP Reader I, the 1900 base of the table" },
+    { "date": "1950-01-01", "degrees": 23, "arcminutes": 4, "source": "Krishnamurti, KP Reader I, table row for 1950" },
+    { "date": "1967-01-01", "degrees": 23, "arcminutes": 18, "source": "Krishnamurti, KP Reader I, table row for 1967" },
+    { "date": "2000-01-01", "degrees": 23, "arcminutes": 46, "source": "Krishnamurti, KP Reader I, table row for 2000; also stated in Casting the Horoscope" },
+    { "date": "1967-09-20", "degrees": 23, "arcminutes": 18, "source": "Krishnamurti, KP Reader V, a worked example stating the ayanamsa on that date" },
+    { "date": "1953-07-01", "degrees": 23, "arcminutes": 6, "source": "Jyotish Astro Secrets, part 3, a worked example stating the ayanamsa in mid 1953" }
+  ]
+}

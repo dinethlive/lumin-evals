@@ -1,0 +1,23 @@
+{
+  "note": "The Vimshottari balance at birth is arithmetic on the Moon's position inside its nakshatra, with no ephemeris in it, so an exact match is the correct expectation. Both derivations are printed in full in the source. The runner does not exercise this fixture, because a birth time that places the Moon at exactly the stated degree is not part of the record; the arithmetic is reproducible by hand from the row.",
+  "source": "Krishnamurti, KP Reader I, the two worked examples of the balance at birth and the ready reckoner that follows them",
+  "nakshatraSpanArcminutes": 800,
+  "cases": [
+    {
+      "moon": "12 degrees Libra, in Swathi, ruled by Rahu",
+      "remainingArcminutes": 480,
+      "lordYears": 18,
+      "printed": "10 years 9 months 18 days remaining, 7 years 2 months 12 days elapsed",
+      "arithmetic": "480 / 800 * 18 = 10.8 years"
+    },
+    {
+      "moon": "16 degrees Taurus, in Rohini, ruled by the Moon",
+      "remainingArcminutes": 440,
+      "lordYears": 10,
+      "printed": "5 years 6 months remaining",
+      "arithmetic": "440 / 800 * 10 = 5.5 years"
+    }
+  ],
+  "readyReckonerYears": { "Ketu": 7, "Venus": 20, "Sun": 6, "Moon": 10, "Mars": 7, "Rahu": 18, "Jupiter": 16, "Saturn": 19, "Mercury": 17 },
+  "readyReckonerNote": "The reckoner's days column is computed on a 360 day year, which is the same twelve months of thirty days the printed answers use. It is notation, not a claim that a Vimshottari year is 360 calendar days; the engine uses 365.25 for real date arithmetic."
+}
