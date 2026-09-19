@@ -40,6 +40,27 @@ ${table(
   sky.map((e) => [e.label, e.instantUtc.replace("T", " ").replace("Z", ""), `${e.bodies.join(" to ")}, ${measureLabel[e.measure]}`, e.engineFigure, `${e.boundDegrees}°`]),
 )}
 
+## Reference ephemerides
+
+Numbers this engine could not have produced without becoming what it is checked against. Each bound is the pinning test's own.
+
+${(() => {
+  const r = scorecard.referenceEphemerides;
+  if (!r) return "_Not in this export._";
+  const h = r.horizons;
+  return [
+    `${h.source}, geocentric apparent ecliptic longitude at ${h.instants} instants, ${h.span}. Worst residual per body, in arcseconds:`,
+    "",
+    table(["Body", "Worst", "Bound"], Object.entries(h.bodies).map(([b, v]) => [b, `${v.worst}″`, `${v.boundArcsec}″`])),
+    "",
+    `${r.swisseph.source}, at the same instants: mean node ${r.swisseph.meanNodeArcsec}″, true node ${r.swisseph.trueNodeArcsec}″, all twelve Placidus cusps and the ARMC ${r.swisseph.cuspArcsec}″.`,
+    "",
+    `${r.spica.source}, Spica's apparent place at ${r.spica.epochs} epochs 1900 to 2050: the True Chitra ayanamsa within ${r.spica.trueChitraWorstArcsec}″. The same run measures the engine's Lahiri ${r.spica.lahiriGapArcsec}″ from Swiss Ephemeris's, which is an open finding.`,
+    "",
+    `${r.eclipses.source}, ${r.eclipses.span}: ${r.eclipses.classified} of ${r.eclipses.canon} eclipses classified with their type.`,
+  ].join("\n");
+})()}
+
 ## Ayanamsa
 
 KP Old, against the published table and two worked examples, within ${ayanamsa.toleranceArcminutes} arcminute.
@@ -48,7 +69,7 @@ ${table(["Date", "Printed", "Source"], ayanamsa.rows.map((r) => [r.date, `${r.de
 
 ## House cusps
 
-No observation to check against, so the cusps are checked against their own defining equation, re-derived with independent trigonometry at six places on both hemispheres, the equator and Reykjavik. Worst case ${scorecard.placidusWorstErrorArcsec} arcseconds.
+No observation to check against, so the cusps are checked two ways: against their own defining equation, re-derived with independent trigonometry at six places on both hemispheres, the equator and Reykjavik, worst case ${scorecard.placidusWorstErrorArcsec} arcseconds; and against a full Swiss Ephemeris cusp set with its ARMC${scorecard.referenceEphemerides ? `, ${scorecard.referenceEphemerides.swisseph.cuspArcsec} arcseconds` : ""}.
 
 ## The ledger
 

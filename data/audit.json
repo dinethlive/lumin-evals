@@ -151,16 +151,19 @@
         "Q005",
         "Q010",
         "Q011",
-        "Q019"
+        "Q019",
+        "Q024"
       ]
     },
     {
       "id": "F015",
       "title": "The test suite mostly asserts that code ran, not that it is right",
       "kind": "defect",
-      "status": "open",
+      "status": "partly-fixed",
       "raised": "2026-08-13",
-      "questions": []
+      "questions": [
+        "Q025"
+      ]
     },
     {
       "id": "F016",
@@ -181,7 +184,8 @@
       "status": "open",
       "raised": "2026-08-13",
       "questions": [
-        "Q004"
+        "Q004",
+        "Q028"
       ]
     },
     {
@@ -323,7 +327,10 @@
       "questions": [
         "Q012",
         "Q014",
-        "Q017"
+        "Q017",
+        "Q023",
+        "Q030",
+        "Q031"
       ]
     },
     {
@@ -371,7 +378,8 @@
         "Q003",
         "Q009",
         "Q019",
-        "Q020"
+        "Q020",
+        "Q029"
       ]
     },
     {
@@ -391,7 +399,8 @@
       "status": "fixed",
       "raised": "2026-08-21",
       "questions": [
-        "Q019"
+        "Q019",
+        "Q030"
       ]
     },
     {
@@ -413,7 +422,8 @@
       "questions": [
         "Q014",
         "Q015",
-        "Q020"
+        "Q020",
+        "Q028"
       ]
     },
     {
@@ -467,7 +477,8 @@
         "Q017",
         "Q018",
         "Q021",
-        "Q022"
+        "Q022",
+        "Q028"
       ]
     },
     {
@@ -496,7 +507,10 @@
       "kind": "unsourced",
       "status": "fixed",
       "raised": "2026-08-22",
-      "questions": []
+      "questions": [
+        "Q033",
+        "Q034"
+      ]
     },
     {
       "id": "F048",
@@ -522,16 +536,21 @@
       "kind": "defect",
       "status": "fixed",
       "raised": "2026-08-22",
-      "questions": []
+      "questions": [
+        "Q026",
+        "Q032"
+      ]
     },
     {
       "id": "F051",
       "title": "Two of fifteen saham formulas are attested, one of those disagrees with the engine, and Yasas admits its own substitution",
       "kind": "unsourced",
-      "status": "open",
+      "status": "partly-fixed",
       "raised": "2026-08-22",
       "questions": [
-        "Q022"
+        "Q022",
+        "Q031",
+        "Q034"
       ]
     },
     {
@@ -614,7 +633,7 @@
       "id": "F060",
       "title": "The oncology promise is gated on an invented star-lord \"cure bias\", and the comment says so",
       "kind": "defect",
-      "status": "open",
+      "status": "fixed",
       "raised": "2026-08-29",
       "questions": [
         "Q020"
@@ -624,10 +643,11 @@
       "id": "F061",
       "title": "KP states a grammar for building a denial group, and 71 of the 78 event rows do not follow it",
       "kind": "provenance",
-      "status": "partly-fixed",
+      "status": "fixed",
       "raised": "2026-08-29",
       "questions": [
-        "Q021"
+        "Q021",
+        "Q028"
       ]
     },
     {
@@ -652,6 +672,218 @@
       "kind": "defect",
       "status": "fixed",
       "raised": "2026-08-29",
+      "questions": []
+    },
+    {
+      "id": "F065",
+      "title": "Two of the fifteen sahams were byte-identical to two others, so the tool returned thirteen points under fifteen names",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-09-10",
+      "questions": [
+        "Q022"
+      ]
+    },
+    {
+      "id": "F066",
+      "title": "KP does not discard dignity and combustion, it moves them to the constellation lord, and the engine implements neither the discard nor the replacement",
+      "kind": "gap",
+      "status": "fixed",
+      "raised": "2026-09-10",
+      "questions": [
+        "Q023"
+      ]
+    },
+    {
+      "id": "F067",
+      "title": "The Moon and every house cusp sat on the mean equinox while the Sun and planets sat on the true one, up to 18.8 arcseconds apart in the same chart",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-09-10",
+      "questions": [
+        "Q025",
+        "Q027",
+        "Q029"
+      ]
+    },
+    {
+      "id": "F068",
+      "title": "KSK's own printed ayanamsa table is two straight segments about 2 arcminutes apart, and the base Q005 pinned came from software rather than the page",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-09-10",
+      "questions": [
+        "Q024"
+      ]
+    },
+    {
+      "id": "F069",
+      "title": "The fruitful-significator compactor deleted the Ruling Planet roles and the C4 tiebreak rank on the way to every MCP caller",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-09-10",
+      "questions": [
+        "Q014"
+      ]
+    },
+    {
+      "id": "F070",
+      "title": "Five more compactors were deleting KP claims on the wire, all caught the day the golden-payload test existed",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-09-11",
+      "questions": []
+    },
+    {
+      "id": "F071",
+      "title": "The planets sat up to ten arcminutes off the JPL lineage, from truncated tables, no light-time, and the Sun's aberration applied to planets",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-09-11",
+      "questions": [
+        "Q027",
+        "Q029"
+      ]
+    },
+    {
+      "id": "F072",
+      "title": "The \"true\" lunar node was Meeus's five-term approximation, up to twelve arcminutes from the osculating node, under a comment claiming one arcsecond",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-09-11",
+      "questions": [
+        "Q029"
+      ]
+    },
+    {
+      "id": "F073",
+      "title": "The 78 event rows gain their pages; 16 shipped a group no page states and are corrected from the corpus, moving 12.0% of verdicts",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-09-11",
+      "questions": [
+        "Q028"
+      ]
+    },
+    {
+      "id": "F074",
+      "title": "The engine offers six ayanamsas and computes five, because true_chitra is routed to the Lahiri function",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-09-12",
+      "questions": []
+    },
+    {
+      "id": "F075",
+      "title": "The paradigm panel read KP's definitions of house lord AND house placement and labelled them Parashari",
+      "kind": "wrong-attribution",
+      "status": "fixed",
+      "raised": "2026-09-12",
+      "questions": [
+        "Q030"
+      ]
+    },
+    {
+      "id": "F076",
+      "title": "Ten non-KP modules judge houses by the Placidus bhava, and a kendra flips 27% of the time",
+      "kind": "wrong-attribution",
+      "status": "fixed",
+      "raised": "2026-09-12",
+      "questions": [
+        "Q037"
+      ]
+    },
+    {
+      "id": "F077",
+      "title": "Module headers mix printed and canon page numbers with no label, and one page number is wrong under both",
+      "kind": "provenance",
+      "status": "partly-fixed",
+      "raised": "2026-09-13",
+      "questions": []
+    },
+    {
+      "id": "F078",
+      "title": "The engine's Lahiri sits 14 to 15 arcseconds from Swiss Ephemeris's Lahiri, and had no external oracle until Spica arrived",
+      "kind": "accuracy",
+      "status": "open",
+      "raised": "2026-09-13",
+      "questions": []
+    },
+    {
+      "id": "F079",
+      "title": "The eclipse screen misses every penumbral lunar eclipse (7 of 26 in 2000 to 2010) and passes one non-eclipse in 25 solar syzygies",
+      "kind": "accuracy",
+      "status": "fixed",
+      "raised": "2026-09-13",
+      "questions": []
+    },
+    {
+      "id": "F080",
+      "title": "Ashtottari and Yogini start the wrong lord, carry no balance at birth, and hand the wall clock in as UTC",
+      "kind": "correctness",
+      "status": "fixed",
+      "raised": "2026-09-13",
+      "questions": []
+    },
+    {
+      "id": "F081",
+      "title": "The combustion grades use a per-planet table where Reader 1 prints one flat three-band rule, and the two disagree on 2.58% of planet rows",
+      "kind": "wrong-attribution",
+      "status": "open",
+      "raised": "2026-09-13",
+      "questions": []
+    },
+    {
+      "id": "F082",
+      "title": "get_mantra_recommendation names three loci and none carries a mantra rule, while the page that does discuss propitiation refuses it",
+      "kind": "wrong-attribution",
+      "status": "open",
+      "raised": "2026-09-13",
+      "questions": []
+    },
+    {
+      "id": "F083",
+      "title": "BPHS 27.34-36's Chesta minimum, as transmitted, sits above Chesta bala's own maximum, so no chart can pass that gate",
+      "kind": "provenance",
+      "status": "open",
+      "raised": "2026-09-13",
+      "questions": []
+    },
+    {
+      "id": "F084",
+      "title": "KP's aspect orb table and its moiety rule are the Tajik deeptamsa doctrine, and one of its seven values is probably a damaged digit",
+      "kind": "provenance",
+      "status": "open",
+      "raised": "2026-09-14",
+      "questions": []
+    },
+    {
+      "id": "F085",
+      "title": "The varshaphala year lord is the annual lagna lord taken unconditionally, and only the file header claims otherwise",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-09-14",
+      "questions": [
+        "Q034"
+      ]
+    },
+    {
+      "id": "F086",
+      "title": "Patyayini was never blocked on panchavargeeya bala, and four documents said it was",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-09-14",
+      "questions": [
+        "Q035",
+        "Q036"
+      ]
+    },
+    {
+      "id": "F087",
+      "title": "get_multi_system_verdict's documented house_group path never worked, and omitting the optional event returned a 500",
+      "kind": "correctness",
+      "status": "fixed",
+      "raised": "2026-09-14",
       "questions": []
     }
   ],
@@ -764,6 +996,91 @@
     {
       "id": "Q022",
       "title": "What are the Tajika saham formulas as *Tajika Neelakanthi* states them, and which of the engine's fifteen match?",
+      "status": "answered"
+    },
+    {
+      "id": "Q023",
+      "title": "KSK relocates dignity and combustion to the constellation lord. Does the successor literature build on it, and does dignity keep a role in medical judgement?",
+      "status": "answered"
+    },
+    {
+      "id": "Q024",
+      "title": "The KP ayanamsa is verified 1900 to 2000 and extrapolated linearly outside it. What is published for 1850 and 2100, and is a linear model right?",
+      "status": "answered"
+    },
+    {
+      "id": "Q025",
+      "title": "The astronomy is written from scratch and checked against six sky events and one nutation epoch. What published reference values would bound its error across the range it actually serves?",
+      "status": "answered"
+    },
+    {
+      "id": "Q026",
+      "title": "The 2,241 sub-sub spans are pinned to a reconstructed arc. Is there a cleanly printed sub-sub table anywhere to quote instead?",
+      "status": "answered"
+    },
+    {
+      "id": "Q027",
+      "title": "Reference apparent longitudes from the JPL lineage, at stated instants, as test oracles for the from-scratch astronomy",
+      "status": "answered"
+    },
+    {
+      "id": "Q028",
+      "title": "The 23 event rows whose denial group shares no house with KP's own derivation: which page, if any, does each rest on?",
+      "status": "answered"
+    },
+    {
+      "id": "Q029",
+      "title": "The lunar nodes, mean and true, and one Placidus cusp set from Swiss Ephemeris, at stated instants, as the two oracles Q027 could not produce",
+      "status": "answered"
+    },
+    {
+      "id": "Q030",
+      "title": "Q017 sourced the non-KP tools. Where is chapter and verse for the DOCTRINE underneath them?",
+      "status": "answered"
+    },
+    {
+      "id": "Q031",
+      "title": "What does Tajika Neelakanthi actually state for the sixteen yogas, panchavargeeya bala, and the annual dashas?",
+      "status": "answered"
+    },
+    {
+      "id": "Q032",
+      "title": "Does Jaimini state a judgement procedure, and what exactly is argala?",
+      "status": "answered"
+    },
+    {
+      "id": "Q033",
+      "title": "What are the actual arithmetic procedures for the six Shadbala sub-balas?",
+      "status": "answered"
+    },
+    {
+      "id": "Q034",
+      "title": "What are the POINT LADDERS inside panchavargeeya bala, the hadda table, and the two lists harsha bala needs?",
+      "status": "answered"
+    },
+    {
+      "id": "Q035",
+      "title": "How is a krishamsa derived, given that it is NOT the panchavargeeya total over four?",
+      "status": "answered"
+    },
+    {
+      "id": "Q036",
+      "title": "What do BPHS ch. 46 v. 70 and the Rohini second-pada sequence actually say?",
+      "status": "answered"
+    },
+    {
+      "id": "Q037",
+      "title": "What does BPHS state for the bhava-madhya construction the Sripati house system rests on?",
+      "status": "answered"
+    },
+    {
+      "id": "Q038",
+      "title": "The eleven Kalachakra pada sequences Q036 did not return",
+      "status": "answered"
+    },
+    {
+      "id": "Q039",
+      "title": "The Raghavacharya Kalachakra reading: its primary text, and the pada-boundary progression",
       "status": "open"
     }
   ]

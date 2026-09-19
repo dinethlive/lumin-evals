@@ -1,6 +1,6 @@
 # Scorecard
 
-Exported from the audit record on 2026-09-06. The same figures are drawn at [https://lumin.guru/benchmarks](https://lumin.guru/benchmarks).
+Exported from the audit record on 2026-09-19. The same figures are drawn at [https://lumin.guru/benchmarks](https://lumin.guru/benchmarks).
 
 ## The core, layer by layer
 
@@ -10,12 +10,15 @@ Everything every tool depends on, in dependency order. Each layer is checked aga
 | --- | --- | --- |
 | Julian day | Meeus, Astronomical Algorithms, example 7.a | Exact |
 | Delta T | Published historical values, 1900 to 2020 | Within tolerance |
-| Nutation and obliquity | IAU 1980 against Meeus example 22.a, and the Placidus condition | Holds |
-| Planets, VSOP87 | 5 observed sky events with published timestamps | Worst 0.065 degrees |
-| Moon, ELP2000 | The total solar eclipse of 2017-08-21 | 0.035 degrees |
-| Ayanamsa, KP Old | 4 published Reader I table rows and 2 corpus values | Within 1 arcminute |
-| Ayanamsa, KP New | 2 published values | To the arcsecond |
-| Placidus house cusps | Their own defining equation, re-derived independently at 6 latitudes | 0.16 arcseconds, worst case |
+| Nutation and obliquity | IAU 1980 against Meeus at three epochs, and Swiss Ephemeris at 14 instants | 0.015 arcseconds |
+| Planets, VSOP87 | JPL Horizons DE441 at 14 instants, 1900 to 2050, and 5 observed sky events | Worst 0.4 arcseconds |
+| Moon, ELP2000 | DE441 at the same instants, and the total solar eclipse of 2017-08-21 | 5.71 arcseconds, worst |
+| Lunar nodes, mean and true | Swiss Ephemeris at the same instants, the true node corroborated by Skyfield | 0.12 arcseconds mean, 31 arcseconds true |
+| Eclipses, solar and lunar | NASA's canon for 2000 to 2010, every eclipse with its type | 50 of 50 classified |
+| Ayanamsa, KP Old | KSK's printed table, 21 rows 1840 to 2001, 2 charts in his hand, 2 corpus values | Within 1 arcminute of his practice |
+| Ayanamsa, KP New | 3 published values and the published 1850 row | To the arcsecond |
+| Ayanamsa, True Chitra | Spica's apparent place in Swiss Ephemeris at 5 epochs, 1900 to 2050 | 0.32 arcseconds, worst |
+| Placidus house cusps | Their own defining equation at 6 latitudes, and a full Swiss Ephemeris set with its ARMC | 0.16 and 0.05 arcseconds |
 | The 249-sub table | 2 corpus arcs, printed to the second | Exact |
 | Sub-sub lords, 2,241 spans | 1 printed arc, 1 printed four-level chain in a second book, and the tiling invariant | Exact |
 | Vimshottari dasha balance | 2 worked derivations and a 9-row ready reckoner, Reader 1 | Exact |
@@ -33,6 +36,28 @@ Each event has a published timestamp, so the engine cannot have influenced it. T
 | Solar eclipse | 2017-08-21 18:26:00 | Moon to Sun, separation | 0.035° | 0.15° |
 | Vernal equinox | 2000-03-20 07:35:00 | Sun, tropical longitude | 359.9998° | 0.01° |
 
+## Reference ephemerides
+
+Numbers this engine could not have produced without becoming what it is checked against. Each bound is the pinning test's own.
+
+JPL Horizons DE441, geocentric apparent ecliptic longitude at 14 instants, 1900 to 2050. Worst residual per body, in arcseconds:
+
+| Body | Worst | Bound |
+| --- | --- | --- |
+| Sun | 0.13″ | 0.5″ |
+| Mercury | 0.15″ | 0.5″ |
+| Venus | 0.15″ | 0.5″ |
+| Mars | 0.2″ | 0.5″ |
+| Jupiter | 0.4″ | 1″ |
+| Saturn | 0.37″ | 1″ |
+| Moon | 5.71″ | 8″ |
+
+Swiss Ephemeris, at the same instants: mean node 0.12″, true node 31″, all twelve Placidus cusps and the ARMC 0.05″.
+
+Swiss Ephemeris, Spica's apparent place at 5 epochs 1900 to 2050: the True Chitra ayanamsa within 0.32″. The same run measures the engine's Lahiri 14″ from Swiss Ephemeris's, which is an open finding.
+
+NASA GSFC decade canon, 2000 to 2010: 50 of 50 eclipses classified with their type.
+
 ## Ayanamsa
 
 KP Old, against the published table and two worked examples, within 1 arcminute.
@@ -48,13 +73,13 @@ KP Old, against the published table and two worked examples, within 1 arcminute.
 
 ## House cusps
 
-No observation to check against, so the cusps are checked against their own defining equation, re-derived with independent trigonometry at six places on both hemispheres, the equator and Reykjavik. Worst case 0.16 arcseconds.
+No observation to check against, so the cusps are checked two ways: against their own defining equation, re-derived with independent trigonometry at six places on both hemispheres, the equator and Reykjavik, worst case 0.16 arcseconds; and against a full Swiss Ephemeris cusp set with its ARMC, 0.05 arcseconds.
 
 ## The ledger
 
 | Findings | Fixed | Partly fixed | Open |
 | --- | --- | --- | --- |
-| 64 | 55 | 1 | 8 |
+| 87 | 74 | 3 | 10 |
 
 See [FINDINGS.md](FINDINGS.md) for every finding by id.
 
@@ -62,6 +87,6 @@ See [FINDINGS.md](FINDINGS.md) for every finding by id.
 
 | Corpus pages | Questions | Answered | Search keywords | Research reports | Report words |
 | --- | --- | --- | --- | --- | --- |
-| 5,045 | 22 | 21 | 629 | 22 | 86,954 |
+| 5,045 | 39 | 38 | 1,197 | 40 | 161,410 |
 
-The engine's own suite runs 1,794 tests across 124 files on every change.
+The engine's own suite runs 2,788 tests across 166 files on every change.
