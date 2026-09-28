@@ -2,30 +2,34 @@
 
 Every finding the audit has raised against the engine, by status. A finding is a place where the engine and the printed KP books disagreed, or where a rule shipped with no source behind it. "Through" names the research questions the finding raised or was closed by.
 
-## Open (10)
+## Open (11)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
 | F006 | 2026-08-13 | provenance | The engine cites two source trees and neither exists | Q015, Q018, Q019 |
 | F012 | 2026-08-13 | gap | The timing cascade advertises a Lagna tier it does not implement | Q002 |
 | F017 | 2026-08-13 | defect | "'Legal Disputes / Court' is an occurrence gate that reads like an outcome gate, and puts the opponent's house on the required side" | Q004, Q028 |
-| F031 | 2026-08-18 | unsourced | Thirteen definitions of STRONG, five scales, one vocabulary, and KP has no number at all | Q012, Q014, Q017, Q023, Q030, Q031 |
+| F031 | 2026-08-18 | unsourced | Thirteen definitions of STRONG, five scales, one vocabulary, and KP has no number at all | Q012, Q014, Q017, Q023, Q030, Q031, Q041 |
 | F056 | 2026-08-22 | unsourced | The weather verdict's rain and drought house sets match no stated convention, and put the 6th on the dry side | Q018 |
 | F078 | 2026-09-13 | accuracy | The engine's Lahiri sits 14 to 15 arcseconds from Swiss Ephemeris's Lahiri, and had no external oracle until Spica arrived |  |
 | F081 | 2026-09-13 | wrong-attribution | The combustion grades use a per-planet table where Reader 1 prints one flat three-band rule, and the two disagree on 2.58% of planet rows |  |
 | F082 | 2026-09-13 | wrong-attribution | get_mantra_recommendation names three loci and none carries a mantra rule, while the page that does discuss propitiation refuses it |  |
 | F083 | 2026-09-13 | provenance | BPHS 27.34-36's Chesta minimum, as transmitted, sits above Chesta bala's own maximum, so no chart can pass that gate |  |
 | F084 | 2026-09-14 | provenance | KP's aspect orb table and its moiety rule are the Tajik deeptamsa doctrine, and one of its seven values is probably a damaged digit |  |
+| F166 | 2026-09-28 | provenance | The fruitful filter reads the Ruling Planets with no node rule, where the page that defines fruitful selection includes the nodes, and KSK's own Reader 6 rule (add the node) ships under the name "web-always-add" |  |
 
-## Partly fixed (3)
+## Partly fixed (6)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
 | F015 | 2026-08-13 | defect | The test suite mostly asserts that code ran, not that it is right | Q025 |
 | F051 | 2026-08-22 | unsourced | Two of fifteen saham formulas are attested, one of those disagrees with the engine, and Yasas admits its own substitution | Q022, Q031, Q034 |
-| F077 | 2026-09-13 | provenance | Module headers mix printed and canon page numbers with no label, and one page number is wrong under both |  |
+| F077 | 2026-09-13 | provenance | Module headers mix printed and canon page numbers with no label, and one page number is wrong under both | Q040 |
+| F106 | 2026-09-27 | defect | get_subsub_boundary's twin-divergence index says HIGH for 82% of random charts and LOW for none, and carries no scoreProvenance |  |
+| F144 | 2026-09-27 | provenance | Seven of the sixteen yogas run on Q031's paraphrase where the Tajikanilakanthi states different conditions, and the two called undefined are defined there |  |
+| F146 | 2026-09-27 | unsourced | The year-lord aspect gate tests each candidate against the ascendant with its own full deeptamsa, a reading no source states, and a sign-only gate picks a different year lord on 44% of charts |  |
 
-## Fixed (74)
+## Fixed (143)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
@@ -103,8 +107,77 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F085 | 2026-09-14 | provenance | The varshaphala year lord is the annual lagna lord taken unconditionally, and only the file header claims otherwise | Q034 |
 | F086 | 2026-09-14 | provenance | Patyayini was never blocked on panchavargeeya bala, and four documents said it was | Q035, Q036 |
 | F087 | 2026-09-14 | correctness | get_multi_system_verdict's documented house_group path never worked, and omitting the optional event returned a 500 |  |
+| F088 | 2026-09-27 | defect | run_triple_dasha_consensus rewrites the event name before resolving it, and reports one overlap as both a triple and a double |  |
+| F089 | 2026-09-27 | provenance | run_triple_dasha_consensus calls three systems independent and returns STRONG for most charts, because two of its three inputs ignore the event |  |
+| F090 | 2026-09-27 | provenance | get_reading_protocol tells agents that concordance between systems is a stronger prediction, and contradicts itself on Ashtakoota and the D charts |  |
+| F091 | 2026-09-27 | gap | get_paradigm_panel declares TIMING_DIVERGENCE but no reader returns a window, so timing is never compared, and its Jaimini column still predates Q032 |  |
+| F092 | 2026-09-27 | defect | The first mahadasha divides its balance among all nine bhuktis, which KSK forbids in so many words |  |
+| F093 | 2026-09-27 | defect | In the six subs split at a sign boundary, the sub-sub lords tile each fragment instead of the whole sub, so 2.2% of the zodiac carries a wrong sub-sub lord |  |
+| F094 | 2026-09-27 | defect | The Ruling Planets day lord changes at civil midnight, where KSK says the day runs sunrise to sunrise, and five callers hand it a true instant besides |  |
+| F095 | 2026-09-27 | defect | get_sublord_changes reports a sign seam as a sub-lord change, returns -1 for Saturn one time in five, and describes a response shape it does not return |  |
+| F096 | 2026-09-27 | provenance | get_chidra_dasha is tagged kp and cites "KP Reader 3 ch.51", which is the gem chapter; the corpus has no chidra dasha and the 7/8 cut matches no antardasha boundary |  |
+| F098 | 2026-09-27 | defect | get_stellar_dasha_bifurcation labels the dasha lord's STAR lord as the Four Step end indicator; the engine's own Four Step module uses the star lord of the SUB lord |  |
+| F099 | 2026-09-27 | provenance | F037's Four Step attribution came back on seven surfaces, and one of them says F037 corrected it the other way |  |
+| F100 | 2026-09-27 | defect | get_rp_interval cannot receive a place or a UTC offset, so every MCP call computes the Ascendant lords for Chennai and reads the times as UTC |  |
+| F101 | 2026-09-27 | defect | get_ruling_planets promises six named fields, three of which the default response never contains, and a gating claim KP does not make |  |
+| F102 | 2026-09-27 | defect | Fruitful significators are filtered through the Ruling Planets of the BIRTH moment, where KSK takes the Ruling Planets of the moment of judgement |  |
+| F103 | 2026-09-27 | defect | F028 did not reach get_horary_advanced or get_horary_serial; both still cast the Ascendant from the clock and ignore the querent's number |  |
+| F104 | 2026-09-27 | unsourced | The khullar frame is Lahiri minus 3′ with no source, and sits 2.4′ to 2.8′ below the formula research attributes to Khullar, enough to flip a quarter of sub-sub lords |  |
+| F105 | 2026-09-27 | defect | get_boundary_warnings finds the boundary by stepping 18″ at a time, so its distance and boundary longitude are up to 18″ off, and its "1 Kala = 6′" is not the corpus's kala | Q026 |
+| F110 | 2026-09-27 | defect | Three Bhinnashtakavarga contributor rows are wrong, the per-planet totals still come out right, so the 337 check that "verified" the table cannot see it | Q040 |
+| F111 | 2026-09-27 | defect | D-60 starts even signs from the 7th, a rule neither A14 reading states, and its comment claims equivalence with a formula it does not compute; D-60 is Vimsopaka's heaviest varga |  |
+| F112 | 2026-09-27 | defect | D-6 and D-8 are sold as "per BPHS ch.6", are not among BPHS's sixteen, and map 93% of placements differently from the scheme the tradition that uses them states | Q040 |
+| F113 | 2026-09-27 | defect | computeD9Longitude rounds to 0.01° before callers read the sign from it, so a body within about 2 arcseconds of a navamsa boundary lands in the next navamsa sign |  |
+| F114 | 2026-09-27 | defect | Ashta Koota scores the sworn-enemy yonis as friends, collapses Graha Maitri to three rungs, drops the 5/9 Bhakoot dosha and calls Janma tara bad; 70% of match totals are wrong |  |
+| F115 | 2026-09-27 | defect | detect_yogas computes a different rule from the one it names for Raja, Dhana, Gajakesari and Lakshmi yoga | Q040 |
+| F116 | 2026-09-27 | defect | Budh-Aditya can only fire between 14° and 15° of Sun-Mercury separation, and Pancha Mahapurusha returns the first yoga it finds and hides the rest |  |
+| F117 | 2026-09-27 | defect | Sunafa, Anafa, Durdhura, Vesi, Vasi and Ubhayachari count Placidus houses from the Moon or the Sun, so a chart can report Kemadruma and Sunafa at once |  |
+| F118 | 2026-09-27 | defect | Parivartana is classed by every house either planet owns, not by the two houses exchanged, so the 28/8/30 partition of 66 cannot close and 75% of exchanges come out Dainya |  |
+| F119 | 2026-09-27 | defect | Ekadhipatya shodhana applies one of its rules, ignoring bindu counts, and never reduces a pair where both signs are empty; 44% of reduced Sarvashtakavarga signs differ | Q040 |
+| F120 | 2026-09-27 | defect | Ashtottari spreads Saturn's dasha over three nakshatras where the module's own rule says a malefic's spans four, so the balance at birth is wrong by up to 1.7 years for 1 birth in 9 | Q040 |
+| F121 | 2026-09-27 | provenance | Dwisaptati-sama applies when the lagna lord is "in the 1st or the 7th"; the received reading is the lagna lord in the 7th or the 7th lord in the lagna, and no verse is quoted for either | Q040 |
+| F122 | 2026-09-27 | unsourced | get_vargottama_planets ships a strength multiplier of 2.0 that A15 says no source assigns, and Vimsopaka's five bands carry no scoreProvenance |  |
+| F123 | 2026-09-27 | defect | get_aspects_and_strength promises Western aspect names and an `aspects` array, and returns graha drishti ordinals in three other arrays; it also calls Bhava bala "6-fold" |  |
+| F124 | 2026-09-27 | gap | Classical Drik bala sums the general sputa scale only and drops the full special aspects of Mars, Jupiter and Saturn that A36 says override it | Q040 |
+| F125 | 2026-09-28 | defect | The derived special-aspect promotion in sputa-drishti.ts returns a full 60 virupas across the whole 180-300° segment for Mars, Jupiter and Saturn, where BPHS 26.9-12 gives graduated values down to 0 |  |
+| F130 | 2026-09-27 | defect | The chara karaka tie rule fires on a shared WHOLE degree, so the "seven-karaka scheme" ships eight karakas for 55% of charts and makes Rahu the Atmakaraka in 7% |  |
+| F131 | 2026-09-27 | provenance | get_chara_karakas names the two karaka schools backwards on the wire, and the Jaimini sutra numbers in the engine and the sheet name no numbering tradition (A32's names the argala block) |  |
+| F132 | 2026-09-27 | defect | get_chara_dasha's primary reading counts every sign's years in the dasha's direction, a rule no named lineage states, so it matches none of K. N. Rao, SJC or Raghava Bhatta and differs from each on the current period in 78% to 85% of charts |  |
+| F133 | 2026-09-27 | gap | get_chara_dasha returns no antardashas, though every lineage the sources name divides each sign period into twelve, and the lineages disagree on where the twelve start |  |
+| F134 | 2026-09-27 | defect | get_chara_karakas and run_karakamsa_spiritual_lens still report the Placidus bhava as the house, which is not the Jaimini house for half the karakas (F076 missed them) |  |
+| F135 | 2026-09-27 | defect | get_ishta_devata skips A22's second step (the aspecting planet) and, among several occupants, takes whichever comes first in the planet record, while its header says "strongest" |  |
+| F136 | 2026-09-27 | gap | The arudha padas never consult the Scorpio/Aquarius node co-lord, report no exception variant and no Upapada variant, and A20 calls the construction undisputed; the co-lord alone moves a pada in 95% of charts |  |
+| F137 | 2026-09-27 | provenance | The claim that Jaimini has no promise gate ships from six places, and F091's fix names one of them |  |
+| F140 | 2026-09-27 | defect | The solar return is searched from 1 January UTC, so near the year boundary a target year gets the wrong return, one year is skipped and another is cast twice |  |
+| F141 | 2026-09-27 | defect | The mudda dasha opens one Vimshottari lord behind the published mapping on every chart and every year, runs with no balance, and its annual-Moon variant is a formula no source states |  |
+| F142 | 2026-09-27 | defect | The poorna (perfected) flag is true on every ithasala and false on exactly the ones that are perfected | Q031 |
+| F143 | 2026-09-27 | defect | Nakta and yamaya carry each other's Arabic gloss on the wire, and nakta never tests that the middle planet separates from one and applies to the other | Q031 |
+| F145 | 2026-09-27 | provenance | The tri-rashi-pati uses the Graeco-Arabic triplicity table and never names the Tajik sign-by-sign table, which differs on 8 of 12 signs and moves the year lord on about one chart in ten |  |
+| F147 | 2026-09-27 | defect | Five Tajik method notes and one tool description still say panchavargeeya is unbuilt, the year-lord tie-break cannot run, harsha reaches 10 and patyayini is not built |  |
+| F150 | 2026-09-27 | defect | run_marriage_complete_reading and run_kundli_match_complete look the Mars dosha up by a name doshas.ts stopped using, so both report no Manglik on every chart, and the marriage synthesis calls MIXED_ACTIVE promised |  |
+| F151 | 2026-09-27 | defect | run_kundli_match_complete reads fields get_compatibility_advanced does not return, so the KP column is always UNKNOWN and always voted favourable in an unlabelled three-system concordance |  |
+| F152 | 2026-09-27 | defect | Every two-chart tool builds the second person's chart in Lahiri when its ayanamsa is omitted, while the first defaults to KP, so a default call compares charts in two frames |  |
+| F153 | 2026-09-27 | defect | run_pre_verdict_audit lowers a KP verdict's confidence for combustion ("significations blocked"), planetary war and missing vargottama, which the corpus and the protocol it claims to implement both refuse, and two composites inherit the band |  |
+| F154 | 2026-09-27 | defect | The raman frame sits 0.4 arcminutes from Lahiri instead of about 1.45 degrees below it, so every frame-spread figure the cross-system tools quote rests on a sixth frame that is not Raman's |  |
+| F155 | 2026-09-27 | defect | get_paradigm_panel with frames casts the Tajik annual chart once, in the base frame, and hands it to every frame, so Tajik is reported frame-stable without being tested |  |
+| F156 | 2026-09-27 | gap | get_paradigm_panel declares CONCORDANT_ON_DIFFERENT_GROUNDS, its independence test, but every verdict-bearing reader cites the same event row, so the value is never produced and agreement is always reported as shared-ground CONCORDANT |  |
+| F157 | 2026-09-27 | defect | run_year_outlook_complete reads the target year for the Tajik and annual blocks but today's date for Sade Sati, Yogini, Ashtottari and the eclipse scan, then votes all of it into one yearTone |  |
+| F158 | 2026-09-27 | defect | The Vimshottari tree is anchored on the local wall clock stamped as UTC while every other dasha is anchored on the true instant, so the triple-dasha composite compares windows on two clocks |  |
+| F159 | 2026-09-27 | provenance | Four composites tagged kp run Jaimini, Parashari and Tajik steps unattributed, the Jaimini composite runs non-Jaimini steps, and the protocol restates the star-lord denial F059 removed |  |
+| F160 | 2026-09-28 | defect | The chart marks Rahu and Ketu retrograde in every chart, where KSK says to treat them as never retrograde, so every KP rule reading the flag fires on the nodes |  |
+| F161 | 2026-09-28 | defect | The retrograde release dates on the promise and timing tools were solved from the local wall clock stamped as UTC, not the birth instant |  |
+| F162 | 2026-09-28 | defect | Seventeen modules print dasha boundaries with String(date), so the wire date is the server's timezone and not ISO, and the same request differs by host |  |
+| F163 | 2026-09-28 | defect | find_event_timing_v2's compactor deleted the transit hierarchy and five candidate fields undeclared, hidden because its golden capture had no candidate periods |  |
+| F165 | 2026-09-28 | provenance | "Double retrograde ships as STATE_B_DENIAL on a kp tool, keyed on the cusp's star lord where both corpus positions key it on the sub lord's own, with the nodes counted retrograde and the counter-position absent" |  |
+| F175 | 2026-09-28 | unsourced | Whether Rahu and Ketu cast graha drishti is stated four different ways across the repo, and none of the four has a locus | Q043 |
+| F176 | 2026-09-28 | unsourced | The Sudarshana dasha counts each year's month bhava from the 1st bhava, and no verse on disk says whether the months start there or at the year-lagna | Q042 |
+| F185 | 2026-09-28 | defect | A horary chart's Ruling Planets take the Ascendant lords from the number's cusp, which is Prabhakar's definition, where KSK takes the Ascendant rising at the moment of judgement |  |
+| F186 | 2026-09-28 | unsourced | "The number must agree with the Ruling Planets" has no source, and T19's 0.67 line has none either |  |
+| F190 | 2026-09-28 | provenance | "The Sudarshana chakra's wire citation, and the paradigm panel's copy of it, still say Sharma's ch. 76 was not read, after Q042 read it" |  |
+| F200 | 2026-09-28 | defect | normalize360 could return 360 for a negative a hair below zero, so horary number 125 put cusp 7 in a thirteenth sign and every horary tool threw |  |
+| F220 | 2026-09-28 | defect | run_triple_dasha_consensus reads Yogini and Chara at query_date but ranks its Vimshottari windows from the wall clock, so a query date away from today compares two dates' worth of periods |  |
 
-## Research questions (39)
+## Research questions (43)
 
 | Id | Status | Question |
 | --- | --- | --- |
@@ -147,3 +220,7 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | Q037 | answered | What does BPHS state for the bhava-madhya construction the Sripati house system rests on? |
 | Q038 | answered | The eleven Kalachakra pada sequences Q036 did not return |
 | Q039 | open | The Raghavacharya Kalachakra reading: its primary text, and the pada-boundary progression |
+| Q040 | answered | What do the BPHS verses actually say behind the fixes F110, F112, F115, F119, F120, F121 and F124 (and BP024's varga constructions), in a named edition? |
+| Q041 | answered | Does KP state a test that the horary number must agree with the ruling planets of the moment, and in what form? |
+| Q042 | answered | In BPHS, how is Bhava Dig bala computed and what is the twilight of the +15, what do Sudarshana vv. 15-16 and 27-28 say, and do the Sudarshana months of each year start from the 1st bhava or from that year's bhava? |
+| Q043 | answered | Where do the Parashari texts state the MD-AD relationship rule, the dasha lord's valence, the node's dasha reading and the varga-lagna rule; do Rahu and Ketu cast graha drishti; and what are the Saptavarga and Dasavarga Vimsopaka weights? |

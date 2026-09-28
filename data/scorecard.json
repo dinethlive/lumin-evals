@@ -1,5 +1,5 @@
 {
-  "exportedOn": "2026-09-19",
+  "exportedOn": "2026-09-28",
   "site": "https://lumin.guru/benchmarks",
   "layers": [
     {
@@ -63,7 +63,7 @@
       "result": "Exact"
     },
     {
-      "layer": "Sub-sub lords, 2,241 spans",
+      "layer": "Sub-sub lords, 2,187 spans",
       "oracle": "1 printed arc, 1 printed four-level chain in a second book, and the tiling invariant",
       "result": "Exact"
     },
@@ -130,21 +130,21 @@
   },
   "placidusWorstErrorArcsec": 0.16,
   "findings": {
-    "total": 87,
-    "fixed": 74,
-    "partlyFixed": 3,
-    "open": 10
+    "total": 160,
+    "fixed": 143,
+    "partlyFixed": 6,
+    "open": 11
   },
   "research": {
-    "questions": 39,
-    "answered": 38,
-    "keywords": 1197,
-    "reports": 40,
-    "reportWords": 161410
+    "questions": 43,
+    "answered": 42,
+    "keywords": 1312,
+    "reports": 48,
+    "reportWords": 197546
   },
   "corpusPages": 5045,
   "tests": {
-    "files": 166,
-    "count": 2788
+    "files": 232,
+    "count": 3418
   }
 }

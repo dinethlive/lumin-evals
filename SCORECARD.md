@@ -1,6 +1,6 @@
 # Scorecard
 
-Exported from the audit record on 2026-09-19. The same figures are drawn at [https://lumin.guru/benchmarks](https://lumin.guru/benchmarks).
+Exported from the audit record on 2026-09-28. The same figures are drawn at [https://lumin.guru/benchmarks](https://lumin.guru/benchmarks).
 
 ## The core, layer by layer
 
@@ -20,7 +20,7 @@ Everything every tool depends on, in dependency order. Each layer is checked aga
 | Ayanamsa, True Chitra | Spica's apparent place in Swiss Ephemeris at 5 epochs, 1900 to 2050 | 0.32 arcseconds, worst |
 | Placidus house cusps | Their own defining equation at 6 latitudes, and a full Swiss Ephemeris set with its ARMC | 0.16 and 0.05 arcseconds |
 | The 249-sub table | 2 corpus arcs, printed to the second | Exact |
-| Sub-sub lords, 2,241 spans | 1 printed arc, 1 printed four-level chain in a second book, and the tiling invariant | Exact |
+| Sub-sub lords, 2,187 spans | 1 printed arc, 1 printed four-level chain in a second book, and the tiling invariant | Exact |
 | Vimshottari dasha balance | 2 worked derivations and a 9-row ready reckoner, Reader 1 | Exact |
 
 ## Observed sky events
@@ -79,7 +79,7 @@ No observation to check against, so the cusps are checked two ways: against thei
 
 | Findings | Fixed | Partly fixed | Open |
 | --- | --- | --- | --- |
-| 87 | 74 | 3 | 10 |
+| 160 | 143 | 6 | 11 |
 
 See [FINDINGS.md](FINDINGS.md) for every finding by id.
 
@@ -87,6 +87,6 @@ See [FINDINGS.md](FINDINGS.md) for every finding by id.
 
 | Corpus pages | Questions | Answered | Search keywords | Research reports | Report words |
 | --- | --- | --- | --- | --- | --- |
-| 5,045 | 39 | 38 | 1,197 | 40 | 161,410 |
+| 5,045 | 43 | 42 | 1,312 | 48 | 197,546 |
 
-The engine's own suite runs 2,788 tests across 166 files on every change.
+The engine's own suite runs 3,418 tests across 232 files on every change.

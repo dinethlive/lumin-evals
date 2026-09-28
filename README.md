@@ -6,13 +6,13 @@
 
 <p align="center">
   Reproducible checks on the astrology engine behind <a href="https://lumin.guru">lumin.guru</a>.<br>
-  Personalization you can trace.
+  The calculation and trust layer for astrology.
 </p>
 
 <p align="center">
   <a href="https://lumin.guru/benchmarks">Benchmarks</a> ·
   <a href="https://docs.lumin.guru">Docs</a> ·
-  <a href="https://developer.lumin.guru">Developer portal</a> ·
+  <a href="https://app.lumin.guru">App</a> ·
   <a href="https://lumin.guru/connect">Connect</a>
 </p>
 
@@ -26,7 +26,7 @@ Every figure published at [lumin.guru/benchmarks](https://lumin.guru/benchmarks)
 
 ## Run the evals
 
-1. Create a key at [developer.lumin.guru](https://developer.lumin.guru). The free allowance covers the run many times over.
+1. Create a key at [app.lumin.guru/api-keys](https://app.lumin.guru/api-keys). The free allowance covers the run many times over.
 2. Run the checks. Node 20 or later, no dependencies.
 
 ```bash

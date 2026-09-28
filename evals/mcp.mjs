@@ -7,7 +7,7 @@
 const DEFAULT_URL = "https://mcp.lumin.guru/mcp";
 
 export function client({ apiKey, url = process.env.LUMIN_MCP_URL || DEFAULT_URL } = {}) {
-  if (!apiKey) throw new Error("LUMIN_API_KEY is required. Create a key at https://developer.lumin.guru");
+  if (!apiKey) throw new Error("LUMIN_API_KEY is required. Create a key at https://app.lumin.guru/api-keys");
   let id = 0;
 
   async function rpc(method, params) {
