@@ -1496,6 +1496,22 @@
       "status": "fixed",
       "raised": "2026-09-28",
       "questions": []
+    },
+    {
+      "id": "F221",
+      "title": "Delta T sat up to 6.3 s off JPL Horizons before 1972 and jumped 52 s on 1 January 2031, so from a clock time the Moon was up to 45.6″ off JPL while the TT oracle stayed green",
+      "kind": "accuracy",
+      "status": "fixed",
+      "raised": "2026-09-29",
+      "questions": []
+    },
+    {
+      "id": "F222",
+      "title": "The six sky-event figures kp-landing published were measured before F071's fix and compared each event with a perfect 0° or 180° the sky does not reach at the published minute",
+      "kind": "accuracy",
+      "status": "fixed",
+      "raised": "2026-09-29",
+      "questions": []
     }
   ],
   "questions": [

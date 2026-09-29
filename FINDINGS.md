@@ -29,7 +29,7 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F144 | 2026-09-27 | provenance | Seven of the sixteen yogas run on Q031's paraphrase where the Tajikanilakanthi states different conditions, and the two called undefined are defined there |  |
 | F146 | 2026-09-27 | unsourced | The year-lord aspect gate tests each candidate against the ascendant with its own full deeptamsa, a reading no source states, and a sign-only gate picks a different year lord on 44% of charts |  |
 
-## Fixed (143)
+## Fixed (145)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
@@ -176,6 +176,8 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F190 | 2026-09-28 | provenance | "The Sudarshana chakra's wire citation, and the paradigm panel's copy of it, still say Sharma's ch. 76 was not read, after Q042 read it" |  |
 | F200 | 2026-09-28 | defect | normalize360 could return 360 for a negative a hair below zero, so horary number 125 put cusp 7 in a thirteenth sign and every horary tool threw |  |
 | F220 | 2026-09-28 | defect | run_triple_dasha_consensus reads Yogini and Chara at query_date but ranks its Vimshottari windows from the wall clock, so a query date away from today compares two dates' worth of periods |  |
+| F221 | 2026-09-29 | accuracy | Delta T sat up to 6.3 s off JPL Horizons before 1972 and jumped 52 s on 1 January 2031, so from a clock time the Moon was up to 45.6″ off JPL while the TT oracle stayed green |  |
+| F222 | 2026-09-29 | accuracy | The six sky-event figures kp-landing published were measured before F071's fix and compared each event with a perfect 0° or 180° the sky does not reach at the published minute |  |
 
 ## Research questions (43)
 

@@ -1,6 +1,6 @@
 # Scorecard
 
-Exported from the audit record on 2026-09-28. The same figures are drawn at [https://lumin.guru/benchmarks](https://lumin.guru/benchmarks).
+Exported from the audit record on 2026-09-29. The same figures are drawn at [https://lumin.guru/benchmarks](https://lumin.guru/benchmarks).
 
 ## The core, layer by layer
 
@@ -29,11 +29,11 @@ Each event has a published timestamp, so the engine cannot have influenced it. T
 
 | Event | Instant, UT | Measure | Engine figure | Bound |
 | --- | --- | --- | --- | --- |
-| Great Conjunction | 2020-12-21 18:20:00 | Jupiter to Saturn, separation | 0.037° | 0.2° |
-| Venus transit | 2012-06-06 01:29:00 | Venus to Sun, separation | 0.043° | 0.15° |
-| Mercury transit | 2019-11-11 15:20:00 | Mercury to Sun, separation | 0.065° | 0.15° |
-| Mars opposition | 2020-10-13 23:20:00 | Mars to Sun, elongation | 179.93° | 0.2° |
-| Solar eclipse | 2017-08-21 18:26:00 | Moon to Sun, separation | 0.035° | 0.15° |
+| Great Conjunction | 2020-12-21 18:20:00 | Jupiter to Saturn, separation | 0.0001° | 0.2° |
+| Venus transit | 2012-06-06 01:29:00 | Venus to Sun, separation | 0.0221° | 0.15° |
+| Mercury transit | 2019-11-11 15:20:00 | Mercury to Sun, separation | 0.0028° | 0.15° |
+| Mars opposition | 2020-10-13 23:20:00 | Mars to Sun, elongation | 179.9947° | 0.2° |
+| Solar eclipse | 2017-08-21 18:26:00 | Moon to Sun, separation | 0.0376° | 0.15° |
 | Vernal equinox | 2000-03-20 07:35:00 | Sun, tropical longitude | 359.9998° | 0.01° |
 
 ## Reference ephemerides
@@ -79,7 +79,7 @@ No observation to check against, so the cusps are checked two ways: against thei
 
 | Findings | Fixed | Partly fixed | Open |
 | --- | --- | --- | --- |
-| 160 | 143 | 6 | 11 |
+| 162 | 145 | 6 | 11 |
 
 See [FINDINGS.md](FINDINGS.md) for every finding by id.
 
@@ -89,4 +89,4 @@ See [FINDINGS.md](FINDINGS.md) for every finding by id.
 | --- | --- | --- | --- | --- | --- |
 | 5,045 | 43 | 42 | 1,312 | 48 | 197,546 |
 
-The engine's own suite runs 3,418 tests across 232 files on every change.
+The engine's own suite runs 3,553 tests across 235 files on every change.

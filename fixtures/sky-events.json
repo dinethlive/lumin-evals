@@ -9,7 +9,7 @@
     ],
     "ideal": 0,
     "boundDegrees": 0.2,
-    "engineFigure": "0.037°"
+    "engineFigure": "0.0001°"
   },
   {
     "label": "Venus transit",
@@ -21,7 +21,7 @@
     ],
     "ideal": 0,
     "boundDegrees": 0.15,
-    "engineFigure": "0.043°"
+    "engineFigure": "0.0221°"
   },
   {
     "label": "Mercury transit",
@@ -33,7 +33,7 @@
     ],
     "ideal": 0,
     "boundDegrees": 0.15,
-    "engineFigure": "0.065°"
+    "engineFigure": "0.0028°"
   },
   {
     "label": "Mars opposition",
@@ -45,7 +45,7 @@
     ],
     "ideal": 180,
     "boundDegrees": 0.2,
-    "engineFigure": "179.93°"
+    "engineFigure": "179.9947°"
   },
   {
     "label": "Solar eclipse",
@@ -57,7 +57,7 @@
     ],
     "ideal": 0,
     "boundDegrees": 0.15,
-    "engineFigure": "0.035°"
+    "engineFigure": "0.0376°"
   },
   {
     "label": "Vernal equinox",

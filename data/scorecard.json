@@ -1,5 +1,5 @@
 {
-  "exportedOn": "2026-09-28",
+  "exportedOn": "2026-09-29",
   "site": "https://lumin.guru/benchmarks",
   "layers": [
     {
@@ -130,8 +130,8 @@
   },
   "placidusWorstErrorArcsec": 0.16,
   "findings": {
-    "total": 160,
-    "fixed": 143,
+    "total": 162,
+    "fixed": 145,
     "partlyFixed": 6,
     "open": 11
   },
@@ -144,7 +144,7 @@
   },
   "corpusPages": 5045,
   "tests": {
-    "files": 232,
-    "count": 3418
+    "files": 235,
+    "count": 3553
   }
 }
