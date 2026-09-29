@@ -18,9 +18,9 @@
       "result": "0.015 arcseconds"
     },
     {
-      "layer": "Planets, VSOP87",
+      "layer": "Planets, VSOP2013",
       "oracle": "JPL Horizons DE441 at 14 instants, 1900 to 2050, and 5 observed sky events",
-      "result": "Worst 0.4 arcseconds"
+      "result": "Worst 0.166 arcseconds"
     },
     {
       "layer": "Moon, ELP/MPP02",
@@ -80,28 +80,28 @@
       "span": "1900 to 2050",
       "bodies": {
         "Sun": {
-          "worst": 0.13,
-          "boundArcsec": 0.5
+          "worst": 0.128,
+          "boundArcsec": 0.17
         },
         "Mercury": {
-          "worst": 0.15,
-          "boundArcsec": 0.5
+          "worst": 0.13,
+          "boundArcsec": 0.17
         },
         "Venus": {
-          "worst": 0.15,
-          "boundArcsec": 0.5
+          "worst": 0.142,
+          "boundArcsec": 0.18
         },
         "Mars": {
-          "worst": 0.2,
-          "boundArcsec": 0.5
+          "worst": 0.161,
+          "boundArcsec": 0.2
         },
         "Jupiter": {
-          "worst": 0.4,
-          "boundArcsec": 1
+          "worst": 0.156,
+          "boundArcsec": 0.2
         },
         "Saturn": {
-          "worst": 0.37,
-          "boundArcsec": 1
+          "worst": 0.166,
+          "boundArcsec": 0.21
         },
         "Moon": {
           "worst": 0.154,
@@ -136,21 +136,21 @@
   },
   "placidusWorstErrorArcsec": 0.16,
   "findings": {
-    "total": 163,
-    "fixed": 147,
+    "total": 171,
+    "fixed": 153,
     "partlyFixed": 6,
-    "open": 10
+    "open": 12
   },
   "research": {
-    "questions": 43,
-    "answered": 42,
-    "keywords": 1312,
-    "reports": 48,
-    "reportWords": 197546
+    "questions": 44,
+    "answered": 43,
+    "keywords": 1340,
+    "reports": 50,
+    "reportWords": 206772
   },
   "corpusPages": 5045,
   "tests": {
-    "files": 238,
-    "count": 3614
+    "files": 245,
+    "count": 3706
   }
 }

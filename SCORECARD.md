@@ -11,7 +11,7 @@ Everything every tool depends on, in dependency order. Each layer is checked aga
 | Julian day | Meeus, Astronomical Algorithms, example 7.a | Exact |
 | Delta T | Published historical values, 1900 to 2020 | Within tolerance |
 | Nutation and obliquity | IAU 1980 against Meeus at three epochs, and Swiss Ephemeris at 14 instants | 0.015 arcseconds |
-| Planets, VSOP87 | JPL Horizons DE441 at 14 instants, 1900 to 2050, and 5 observed sky events | Worst 0.4 arcseconds |
+| Planets, VSOP2013 | JPL Horizons DE441 at 14 instants, 1900 to 2050, and 5 observed sky events | Worst 0.166 arcseconds |
 | Moon, ELP/MPP02 | DE441 at the same instants, and the total solar eclipse of 2017-08-21 | 0.154 arcseconds, worst |
 | Lunar nodes, mean and true | Swiss Ephemeris at the same instants, the true node corroborated by Skyfield | 0.12 arcseconds mean, 1 arcseconds true |
 | Eclipses, solar and lunar | NASA's canon for 2000 to 2010, every eclipse with its type | 50 of 50 classified |
@@ -29,10 +29,10 @@ Each event has a published timestamp, so the engine cannot have influenced it. T
 
 | Event | Instant, UT | Measure | Engine figure | Bound |
 | --- | --- | --- | --- | --- |
-| Great Conjunction | 2020-12-21 18:20:00 | Jupiter to Saturn, separation | 0.0001° | 0.2° |
-| Venus transit | 2012-06-06 01:29:00 | Venus to Sun, separation | 0.0221° | 0.15° |
+| Great Conjunction | 2020-12-21 18:20:00 | Jupiter to Saturn, separation | 0.0000° | 0.2° |
+| Venus transit | 2012-06-06 01:29:00 | Venus to Sun, separation | 0.0220° | 0.15° |
 | Mercury transit | 2019-11-11 15:20:00 | Mercury to Sun, separation | 0.0028° | 0.15° |
-| Mars opposition | 2020-10-13 23:20:00 | Mars to Sun, elongation | 179.9947° | 0.2° |
+| Mars opposition | 2020-10-13 23:20:00 | Mars to Sun, elongation | 179.9946° | 0.2° |
 | Solar eclipse | 2017-08-21 18:26:00 | Moon to Sun, separation | 0.0379° | 0.15° |
 | Vernal equinox | 2000-03-20 07:35:00 | Sun, tropical longitude | 359.9998° | 0.01° |
 
@@ -44,12 +44,12 @@ JPL Horizons DE441, geocentric apparent ecliptic longitude at 14 instants, 1900 
 
 | Body | Worst | Bound |
 | --- | --- | --- |
-| Sun | 0.13″ | 0.5″ |
-| Mercury | 0.15″ | 0.5″ |
-| Venus | 0.15″ | 0.5″ |
-| Mars | 0.2″ | 0.5″ |
-| Jupiter | 0.4″ | 1″ |
-| Saturn | 0.37″ | 1″ |
+| Sun | 0.128″ | 0.17″ |
+| Mercury | 0.13″ | 0.17″ |
+| Venus | 0.142″ | 0.18″ |
+| Mars | 0.161″ | 0.2″ |
+| Jupiter | 0.156″ | 0.2″ |
+| Saturn | 0.166″ | 0.21″ |
 | Moon | 0.154″ | 0.5″ |
 
 Swiss Ephemeris, at the same instants: mean node 0.12″, true node 1″, all twelve Placidus cusps and the ARMC 0.05″.
@@ -81,7 +81,7 @@ No observation to check against, so the cusps are checked two ways: against thei
 
 | Findings | Fixed | Partly fixed | Open |
 | --- | --- | --- | --- |
-| 163 | 147 | 6 | 10 |
+| 171 | 153 | 6 | 12 |
 
 See [FINDINGS.md](FINDINGS.md) for every finding by id.
 
@@ -89,6 +89,6 @@ See [FINDINGS.md](FINDINGS.md) for every finding by id.
 
 | Corpus pages | Questions | Answered | Search keywords | Research reports | Report words |
 | --- | --- | --- | --- | --- | --- |
-| 5,045 | 43 | 42 | 1,312 | 48 | 197,546 |
+| 5,045 | 44 | 43 | 1,340 | 50 | 206,772 |
 
-The engine's own suite runs 3,614 tests across 238 files on every change.
+The engine's own suite runs 3,706 tests across 245 files on every change.

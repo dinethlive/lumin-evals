@@ -943,7 +943,9 @@
       "kind": "defect",
       "status": "fixed",
       "raised": "2026-09-27",
-      "questions": []
+      "questions": [
+        "Q044"
+      ]
     },
     {
       "id": "F095",
@@ -1520,6 +1522,74 @@
       "status": "fixed",
       "raised": "2026-09-29",
       "questions": []
+    },
+    {
+      "id": "F231",
+      "title": "Sunrise, sunset and solar noon had no outside oracle; against JPL Horizons, Skyfield and USNO at 864 events 1900..2050 they meet the engine's own convention to 0.065 s (0.024 s with the pole), and the conventions around it sit 1 to 10 s away",
+      "kind": "accuracy",
+      "status": "fixed",
+      "raised": "2026-09-29",
+      "questions": [
+        "Q044"
+      ]
+    },
+    {
+      "id": "F232",
+      "title": "Which sunrise starts the day is a convention the engine chose without a source, and the Hindu alternatives sit 1 to 20 minutes from it, enough to change the day lord on 0.13% to 0.40% of births",
+      "kind": "gap",
+      "status": "open",
+      "raised": "2026-09-29",
+      "questions": [
+        "Q044"
+      ]
+    },
+    {
+      "id": "F234",
+      "title": "New and full moons were solved to a one-minute bracket (21 s off JPL), and eclipse-impact stopped its syzygy search 0.05 degrees early (6.6 minutes off)",
+      "kind": "accuracy",
+      "status": "fixed",
+      "raised": "2026-09-29",
+      "questions": []
+    },
+    {
+      "id": "F235",
+      "title": "Equinoxes, solstices and the Sun's sidereal ingresses were solved to a one-minute bracket (23.5 s off JPL, where the Sun allows 3.5 s)",
+      "kind": "accuracy",
+      "status": "fixed",
+      "raised": "2026-09-29",
+      "questions": []
+    },
+    {
+      "id": "F236",
+      "title": "Stations came from the geometric rate, not the apparent one, so every station ran early by about the light-time (Saturn 76 minutes on average, 123 worst); the clock went in as TT; and from a direct Venus or Mars no station was found at all",
+      "kind": "accuracy",
+      "status": "fixed",
+      "raised": "2026-09-29",
+      "questions": []
+    },
+    {
+      "id": "F237",
+      "title": "The KP instant finders on the checked positions - transit crossings dropped a second boundary inside an hour (6 of 3,333 for the Moon in 2024, 3 of them sub-lord changes), and the mundane ingress chart was cast utcOffsetMinutes before the ingress",
+      "kind": "accuracy",
+      "status": "fixed",
+      "raised": "2026-09-29",
+      "questions": []
+    },
+    {
+      "id": "F238",
+      "title": "The planets had no deflection of light by the Sun and were checked at fourteen instants that missed every conjunction and close approach, so Saturn sat 1.5\" and Mars 1.35\" off DE441 where the test never looked, and Jupiter's and Saturn's 0.4\" was VSOP87's own floor, not its truncation",
+      "kind": "accuracy",
+      "status": "fixed",
+      "raised": "2026-09-29",
+      "questions": []
+    },
+    {
+      "id": "F239",
+      "title": "JPL Horizons' apparent places of date carry the IERS celestial pole offsets and the engine's IAU 1976/1980 frame does not, a body-independent -0.066\" to +0.123\" in longitude that every Horizons oracle has been reading as the engine's own error",
+      "kind": "accuracy",
+      "status": "open",
+      "raised": "2026-09-29",
+      "questions": []
     }
   ],
   "questions": [
@@ -1736,6 +1806,11 @@
     {
       "id": "Q043",
       "title": "Where do the Parashari texts state the MD-AD relationship rule, the dasha lord's valence, the node's dasha reading and the varga-lagna rule; do Rahu and Ketu cast graha drishti; and what are the Saptavarga and Dasavarga Vimsopaka weights?",
+      "status": "answered"
+    },
+    {
+      "id": "Q044",
+      "title": "Which sunrise starts the astrological day, for KP and for the Hindu traditions the engine serves?",
       "status": "answered"
     }
   ]

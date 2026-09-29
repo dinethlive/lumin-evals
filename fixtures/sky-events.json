@@ -9,7 +9,7 @@
     ],
     "ideal": 0,
     "boundDegrees": 0.2,
-    "engineFigure": "0.0001°"
+    "engineFigure": "0.0000°"
   },
   {
     "label": "Venus transit",
@@ -21,7 +21,7 @@
     ],
     "ideal": 0,
     "boundDegrees": 0.15,
-    "engineFigure": "0.0221°"
+    "engineFigure": "0.0220°"
   },
   {
     "label": "Mercury transit",
@@ -45,7 +45,7 @@
     ],
     "ideal": 180,
     "boundDegrees": 0.2,
-    "engineFigure": "179.9947°"
+    "engineFigure": "179.9946°"
   },
   {
     "label": "Solar eclipse",

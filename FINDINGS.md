@@ -2,7 +2,7 @@
 
 Every finding the audit has raised against the engine, by status. A finding is a place where the engine and the printed KP books disagreed, or where a rule shipped with no source behind it. "Through" names the research questions the finding raised or was closed by.
 
-## Open (10)
+## Open (12)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
@@ -16,6 +16,8 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F083 | 2026-09-13 | provenance | BPHS 27.34-36's Chesta minimum, as transmitted, sits above Chesta bala's own maximum, so no chart can pass that gate |  |
 | F084 | 2026-09-14 | provenance | KP's aspect orb table and its moiety rule are the Tajik deeptamsa doctrine, and one of its seven values is probably a damaged digit |  |
 | F166 | 2026-09-28 | provenance | The fruitful filter reads the Ruling Planets with no node rule, where the page that defines fruitful selection includes the nodes, and KSK's own Reader 6 rule (add the node) ships under the name "web-always-add" |  |
+| F232 | 2026-09-29 | gap | Which sunrise starts the day is a convention the engine chose without a source, and the Hindu alternatives sit 1 to 20 minutes from it, enough to change the day lord on 0.13% to 0.40% of births | Q044 |
+| F239 | 2026-09-29 | accuracy | JPL Horizons' apparent places of date carry the IERS celestial pole offsets and the engine's IAU 1976/1980 frame does not, a body-independent -0.066" to +0.123" in longitude that every Horizons oracle has been reading as the engine's own error |  |
 
 ## Partly fixed (6)
 
@@ -28,7 +30,7 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F144 | 2026-09-27 | provenance | Seven of the sixteen yogas run on Q031's paraphrase where the Tajikanilakanthi states different conditions, and the two called undefined are defined there |  |
 | F146 | 2026-09-27 | unsourced | The year-lord aspect gate tests each candidate against the ascendant with its own full deeptamsa, a reading no source states, and a sign-only gate picks a different year lord on 44% of charts |  |
 
-## Fixed (147)
+## Fixed (153)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
@@ -113,7 +115,7 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F091 | 2026-09-27 | gap | get_paradigm_panel declares TIMING_DIVERGENCE but no reader returns a window, so timing is never compared, and its Jaimini column still predates Q032 |  |
 | F092 | 2026-09-27 | defect | The first mahadasha divides its balance among all nine bhuktis, which KSK forbids in so many words |  |
 | F093 | 2026-09-27 | defect | In the six subs split at a sign boundary, the sub-sub lords tile each fragment instead of the whole sub, so 2.2% of the zodiac carries a wrong sub-sub lord |  |
-| F094 | 2026-09-27 | defect | The Ruling Planets day lord changes at civil midnight, where KSK says the day runs sunrise to sunrise, and five callers hand it a true instant besides |  |
+| F094 | 2026-09-27 | defect | The Ruling Planets day lord changes at civil midnight, where KSK says the day runs sunrise to sunrise, and five callers hand it a true instant besides | Q044 |
 | F095 | 2026-09-27 | defect | get_sublord_changes reports a sign seam as a sub-lord change, returns -1 for Saturn one time in five, and describes a response shape it does not return |  |
 | F096 | 2026-09-27 | provenance | get_chidra_dasha is tagged kp and cites "KP Reader 3 ch.51", which is the gem chapter; the corpus has no chidra dasha and the 7/8 cut matches no antardasha boundary |  |
 | F098 | 2026-09-27 | defect | get_stellar_dasha_bifurcation labels the dasha lord's STAR lord as the Four Step end indicator; the engine's own Four Step module uses the star lord of the SUB lord |  |
@@ -179,8 +181,14 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F221 | 2026-09-29 | accuracy | Delta T sat up to 6.3 s off JPL Horizons before 1972 and jumped 52 s on 1 January 2031, so from a clock time the Moon was up to 45.6″ off JPL while the TT oracle stayed green |  |
 | F222 | 2026-09-29 | accuracy | The six sky-event figures kp-landing published were measured before F071's fix and compared each event with a perfect 0° or 180° the sky does not reach at the published minute |  |
 | F226 | 2026-09-29 | accuracy | Sidereal time read the birth clock (UTC) as UT1, so every cusp sat up to 0.9 s of Earth rotation off, 9.3″ of sidereal time and 35″ on the Ascendant, and 5.9% of charts carried a different cuspal sub-sub lord |  |
+| F231 | 2026-09-29 | accuracy | Sunrise, sunset and solar noon had no outside oracle; against JPL Horizons, Skyfield and USNO at 864 events 1900..2050 they meet the engine's own convention to 0.065 s (0.024 s with the pole), and the conventions around it sit 1 to 10 s away | Q044 |
+| F234 | 2026-09-29 | accuracy | New and full moons were solved to a one-minute bracket (21 s off JPL), and eclipse-impact stopped its syzygy search 0.05 degrees early (6.6 minutes off) |  |
+| F235 | 2026-09-29 | accuracy | Equinoxes, solstices and the Sun's sidereal ingresses were solved to a one-minute bracket (23.5 s off JPL, where the Sun allows 3.5 s) |  |
+| F236 | 2026-09-29 | accuracy | Stations came from the geometric rate, not the apparent one, so every station ran early by about the light-time (Saturn 76 minutes on average, 123 worst); the clock went in as TT; and from a direct Venus or Mars no station was found at all |  |
+| F237 | 2026-09-29 | accuracy | The KP instant finders on the checked positions - transit crossings dropped a second boundary inside an hour (6 of 3,333 for the Moon in 2024, 3 of them sub-lord changes), and the mundane ingress chart was cast utcOffsetMinutes before the ingress |  |
+| F238 | 2026-09-29 | accuracy | The planets had no deflection of light by the Sun and were checked at fourteen instants that missed every conjunction and close approach, so Saturn sat 1.5" and Mars 1.35" off DE441 where the test never looked, and Jupiter's and Saturn's 0.4" was VSOP87's own floor, not its truncation |  |
 
-## Research questions (43)
+## Research questions (44)
 
 | Id | Status | Question |
 | --- | --- | --- |
@@ -227,3 +235,4 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | Q041 | answered | Does KP state a test that the horary number must agree with the ruling planets of the moment, and in what form? |
 | Q042 | answered | In BPHS, how is Bhava Dig bala computed and what is the twilight of the +15, what do Sudarshana vv. 15-16 and 27-28 say, and do the Sudarshana months of each year start from the 1st bhava or from that year's bhava? |
 | Q043 | answered | Where do the Parashari texts state the MD-AD relationship rule, the dasha lord's valence, the node's dasha reading and the varga-lagna rule; do Rahu and Ketu cast graha drishti; and what are the Saptavarga and Dasavarga Vimsopaka weights? |
+| Q044 | answered | Which sunrise starts the astrological day, for KP and for the Hindu traditions the engine serves? |
