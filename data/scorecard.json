@@ -136,10 +136,10 @@
   },
   "placidusWorstErrorArcsec": 0.16,
   "findings": {
-    "total": 171,
+    "total": 172,
     "fixed": 153,
     "partlyFixed": 6,
-    "open": 12
+    "open": 13
   },
   "research": {
     "questions": 44,
@@ -150,7 +150,7 @@
   },
   "corpusPages": 5045,
   "tests": {
-    "files": 245,
-    "count": 3706
+    "files": 246,
+    "count": 3712
   }
 }

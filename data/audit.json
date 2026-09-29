@@ -1590,6 +1590,14 @@
       "status": "open",
       "raised": "2026-09-29",
       "questions": []
+    },
+    {
+      "id": "F240",
+      "title": "One system's rule reaches another system's reading unlabelled, in fourteen places the BP029 layout review found",
+      "kind": "defect",
+      "status": "open",
+      "raised": "2026-09-29",
+      "questions": []
     }
   ],
   "questions": [

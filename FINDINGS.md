@@ -2,7 +2,7 @@
 
 Every finding the audit has raised against the engine, by status. A finding is a place where the engine and the printed KP books disagreed, or where a rule shipped with no source behind it. "Through" names the research questions the finding raised or was closed by.
 
-## Open (12)
+## Open (13)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
@@ -18,6 +18,7 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F166 | 2026-09-28 | provenance | The fruitful filter reads the Ruling Planets with no node rule, where the page that defines fruitful selection includes the nodes, and KSK's own Reader 6 rule (add the node) ships under the name "web-always-add" |  |
 | F232 | 2026-09-29 | gap | Which sunrise starts the day is a convention the engine chose without a source, and the Hindu alternatives sit 1 to 20 minutes from it, enough to change the day lord on 0.13% to 0.40% of births | Q044 |
 | F239 | 2026-09-29 | accuracy | JPL Horizons' apparent places of date carry the IERS celestial pole offsets and the engine's IAU 1976/1980 frame does not, a body-independent -0.066" to +0.123" in longitude that every Horizons oracle has been reading as the engine's own error |  |
+| F240 | 2026-09-29 | defect | One system's rule reaches another system's reading unlabelled, in fourteen places the BP029 layout review found |  |
 
 ## Partly fixed (6)
 

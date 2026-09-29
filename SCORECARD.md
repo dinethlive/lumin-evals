@@ -81,7 +81,7 @@ No observation to check against, so the cusps are checked two ways: against thei
 
 | Findings | Fixed | Partly fixed | Open |
 | --- | --- | --- | --- |
-| 171 | 153 | 6 | 12 |
+| 172 | 153 | 6 | 13 |
 
 See [FINDINGS.md](FINDINGS.md) for every finding by id.
 
@@ -91,4 +91,4 @@ See [FINDINGS.md](FINDINGS.md) for every finding by id.
 | --- | --- | --- | --- | --- | --- |
 | 5,045 | 44 | 43 | 1,340 | 50 | 206,772 |
 
-The engine's own suite runs 3,706 tests across 245 files on every change.
+The engine's own suite runs 3,712 tests across 246 files on every change.
