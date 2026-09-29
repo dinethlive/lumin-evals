@@ -808,7 +808,7 @@
       "id": "F078",
       "title": "The engine's Lahiri sits 14 to 15 arcseconds from Swiss Ephemeris's Lahiri, and had no external oracle until Spica arrived",
       "kind": "accuracy",
-      "status": "open",
+      "status": "fixed",
       "raised": "2026-09-13",
       "questions": []
     },
@@ -1508,6 +1508,14 @@
     {
       "id": "F222",
       "title": "The six sky-event figures kp-landing published were measured before F071's fix and compared each event with a perfect 0° or 180° the sky does not reach at the published minute",
+      "kind": "accuracy",
+      "status": "fixed",
+      "raised": "2026-09-29",
+      "questions": []
+    },
+    {
+      "id": "F226",
+      "title": "Sidereal time read the birth clock (UTC) as UT1, so every cusp sat up to 0.9 s of Earth rotation off, 9.3″ of sidereal time and 35″ on the Ascendant, and 5.9% of charts carried a different cuspal sub-sub lord",
       "kind": "accuracy",
       "status": "fixed",
       "raised": "2026-09-29",

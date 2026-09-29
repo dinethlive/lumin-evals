@@ -2,7 +2,7 @@
 
 Every finding the audit has raised against the engine, by status. A finding is a place where the engine and the printed KP books disagreed, or where a rule shipped with no source behind it. "Through" names the research questions the finding raised or was closed by.
 
-## Open (11)
+## Open (10)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
@@ -11,7 +11,6 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F017 | 2026-08-13 | defect | "'Legal Disputes / Court' is an occurrence gate that reads like an outcome gate, and puts the opponent's house on the required side" | Q004, Q028 |
 | F031 | 2026-08-18 | unsourced | Thirteen definitions of STRONG, five scales, one vocabulary, and KP has no number at all | Q012, Q014, Q017, Q023, Q030, Q031, Q041 |
 | F056 | 2026-08-22 | unsourced | The weather verdict's rain and drought house sets match no stated convention, and put the 6th on the dry side | Q018 |
-| F078 | 2026-09-13 | accuracy | The engine's Lahiri sits 14 to 15 arcseconds from Swiss Ephemeris's Lahiri, and had no external oracle until Spica arrived |  |
 | F081 | 2026-09-13 | wrong-attribution | The combustion grades use a per-planet table where Reader 1 prints one flat three-band rule, and the two disagree on 2.58% of planet rows |  |
 | F082 | 2026-09-13 | wrong-attribution | get_mantra_recommendation names three loci and none carries a mantra rule, while the page that does discuss propitiation refuses it |  |
 | F083 | 2026-09-13 | provenance | BPHS 27.34-36's Chesta minimum, as transmitted, sits above Chesta bala's own maximum, so no chart can pass that gate |  |
@@ -29,7 +28,7 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F144 | 2026-09-27 | provenance | Seven of the sixteen yogas run on Q031's paraphrase where the Tajikanilakanthi states different conditions, and the two called undefined are defined there |  |
 | F146 | 2026-09-27 | unsourced | The year-lord aspect gate tests each candidate against the ascendant with its own full deeptamsa, a reading no source states, and a sign-only gate picks a different year lord on 44% of charts |  |
 
-## Fixed (145)
+## Fixed (147)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
@@ -102,6 +101,7 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F074 | 2026-09-12 | provenance | The engine offers six ayanamsas and computes five, because true_chitra is routed to the Lahiri function |  |
 | F075 | 2026-09-12 | wrong-attribution | The paradigm panel read KP's definitions of house lord AND house placement and labelled them Parashari | Q030 |
 | F076 | 2026-09-12 | wrong-attribution | Ten non-KP modules judge houses by the Placidus bhava, and a kendra flips 27% of the time | Q037 |
+| F078 | 2026-09-13 | accuracy | The engine's Lahiri sits 14 to 15 arcseconds from Swiss Ephemeris's Lahiri, and had no external oracle until Spica arrived |  |
 | F079 | 2026-09-13 | accuracy | The eclipse screen misses every penumbral lunar eclipse (7 of 26 in 2000 to 2010) and passes one non-eclipse in 25 solar syzygies |  |
 | F080 | 2026-09-13 | correctness | Ashtottari and Yogini start the wrong lord, carry no balance at birth, and hand the wall clock in as UTC |  |
 | F085 | 2026-09-14 | provenance | The varshaphala year lord is the annual lagna lord taken unconditionally, and only the file header claims otherwise | Q034 |
@@ -178,6 +178,7 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F220 | 2026-09-28 | defect | run_triple_dasha_consensus reads Yogini and Chara at query_date but ranks its Vimshottari windows from the wall clock, so a query date away from today compares two dates' worth of periods |  |
 | F221 | 2026-09-29 | accuracy | Delta T sat up to 6.3 s off JPL Horizons before 1972 and jumped 52 s on 1 January 2031, so from a clock time the Moon was up to 45.6″ off JPL while the TT oracle stayed green |  |
 | F222 | 2026-09-29 | accuracy | The six sky-event figures kp-landing published were measured before F071's fix and compared each event with a perfect 0° or 180° the sky does not reach at the published minute |  |
+| F226 | 2026-09-29 | accuracy | Sidereal time read the birth clock (UTC) as UT1, so every cusp sat up to 0.9 s of Earth rotation off, 9.3″ of sidereal time and 35″ on the Ascendant, and 5.9% of charts carried a different cuspal sub-sub lord |  |
 
 ## Research questions (43)
 

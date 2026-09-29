@@ -12,8 +12,8 @@ Everything every tool depends on, in dependency order. Each layer is checked aga
 | Delta T | Published historical values, 1900 to 2020 | Within tolerance |
 | Nutation and obliquity | IAU 1980 against Meeus at three epochs, and Swiss Ephemeris at 14 instants | 0.015 arcseconds |
 | Planets, VSOP87 | JPL Horizons DE441 at 14 instants, 1900 to 2050, and 5 observed sky events | Worst 0.4 arcseconds |
-| Moon, ELP2000 | DE441 at the same instants, and the total solar eclipse of 2017-08-21 | 5.71 arcseconds, worst |
-| Lunar nodes, mean and true | Swiss Ephemeris at the same instants, the true node corroborated by Skyfield | 0.12 arcseconds mean, 31 arcseconds true |
+| Moon, ELP/MPP02 | DE441 at the same instants, and the total solar eclipse of 2017-08-21 | 0.154 arcseconds, worst |
+| Lunar nodes, mean and true | Swiss Ephemeris at the same instants, the true node corroborated by Skyfield | 0.12 arcseconds mean, 1 arcseconds true |
 | Eclipses, solar and lunar | NASA's canon for 2000 to 2010, every eclipse with its type | 50 of 50 classified |
 | Ayanamsa, KP Old | KSK's printed table, 21 rows 1840 to 2001, 2 charts in his hand, 2 corpus values | Within 1 arcminute of his practice |
 | Ayanamsa, KP New | 3 published values and the published 1850 row | To the arcsecond |
@@ -33,7 +33,7 @@ Each event has a published timestamp, so the engine cannot have influenced it. T
 | Venus transit | 2012-06-06 01:29:00 | Venus to Sun, separation | 0.0221° | 0.15° |
 | Mercury transit | 2019-11-11 15:20:00 | Mercury to Sun, separation | 0.0028° | 0.15° |
 | Mars opposition | 2020-10-13 23:20:00 | Mars to Sun, elongation | 179.9947° | 0.2° |
-| Solar eclipse | 2017-08-21 18:26:00 | Moon to Sun, separation | 0.0376° | 0.15° |
+| Solar eclipse | 2017-08-21 18:26:00 | Moon to Sun, separation | 0.0379° | 0.15° |
 | Vernal equinox | 2000-03-20 07:35:00 | Sun, tropical longitude | 359.9998° | 0.01° |
 
 ## Reference ephemerides
@@ -50,11 +50,13 @@ JPL Horizons DE441, geocentric apparent ecliptic longitude at 14 instants, 1900 
 | Mars | 0.2″ | 0.5″ |
 | Jupiter | 0.4″ | 1″ |
 | Saturn | 0.37″ | 1″ |
-| Moon | 5.71″ | 8″ |
+| Moon | 0.154″ | 0.5″ |
 
-Swiss Ephemeris, at the same instants: mean node 0.12″, true node 31″, all twelve Placidus cusps and the ARMC 0.05″.
+Swiss Ephemeris, at the same instants: mean node 0.12″, true node 1″, all twelve Placidus cusps and the ARMC 0.05″.
 
-Swiss Ephemeris, Spica's apparent place at 5 epochs 1900 to 2050: the True Chitra ayanamsa within 0.32″. The same run measures the engine's Lahiri 14″ from Swiss Ephemeris's, which is an open finding.
+Swiss Ephemeris, Spica's apparent place at 5 epochs 1900 to 2050: the True Chitra ayanamsa within 0.32″.
+
+Swiss Ephemeris, the Lahiri ayanamsa at 17 dates 1800 to 2100: within 0.0085″ (bound 0.05″).
 
 NASA GSFC decade canon, 2000 to 2010: 50 of 50 eclipses classified with their type.
 
@@ -79,7 +81,7 @@ No observation to check against, so the cusps are checked two ways: against thei
 
 | Findings | Fixed | Partly fixed | Open |
 | --- | --- | --- | --- |
-| 162 | 145 | 6 | 11 |
+| 163 | 147 | 6 | 10 |
 
 See [FINDINGS.md](FINDINGS.md) for every finding by id.
 
@@ -89,4 +91,4 @@ See [FINDINGS.md](FINDINGS.md) for every finding by id.
 | --- | --- | --- | --- | --- | --- |
 | 5,045 | 43 | 42 | 1,312 | 48 | 197,546 |
 
-The engine's own suite runs 3,553 tests across 235 files on every change.
+The engine's own suite runs 3,614 tests across 238 files on every change.

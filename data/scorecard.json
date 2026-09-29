@@ -23,14 +23,14 @@
       "result": "Worst 0.4 arcseconds"
     },
     {
-      "layer": "Moon, ELP2000",
+      "layer": "Moon, ELP/MPP02",
       "oracle": "DE441 at the same instants, and the total solar eclipse of 2017-08-21",
-      "result": "5.71 arcseconds, worst"
+      "result": "0.154 arcseconds, worst"
     },
     {
       "layer": "Lunar nodes, mean and true",
       "oracle": "Swiss Ephemeris at the same instants, the true node corroborated by Skyfield",
-      "result": "0.12 arcseconds mean, 31 arcseconds true"
+      "result": "0.12 arcseconds mean, 1 arcseconds true"
     },
     {
       "layer": "Eclipses, solar and lunar",
@@ -104,22 +104,28 @@
           "boundArcsec": 1
         },
         "Moon": {
-          "worst": 5.71,
-          "boundArcsec": 8
+          "worst": 0.154,
+          "boundArcsec": 0.5
         }
       }
     },
     "swisseph": {
       "source": "Swiss Ephemeris",
       "meanNodeArcsec": 0.12,
-      "trueNodeArcsec": 31,
+      "trueNodeArcsec": 1,
       "cuspArcsec": 0.05
     },
     "spica": {
       "source": "Swiss Ephemeris",
       "epochs": 5,
-      "trueChitraWorstArcsec": 0.32,
-      "lahiriGapArcsec": 14
+      "trueChitraWorstArcsec": 0.32
+    },
+    "lahiri": {
+      "source": "Swiss Ephemeris",
+      "dates": 17,
+      "span": "1800 to 2100",
+      "worstArcsec": 0.0085,
+      "boundArcsec": 0.05
     },
     "eclipses": {
       "source": "NASA GSFC decade canon",
@@ -130,10 +136,10 @@
   },
   "placidusWorstErrorArcsec": 0.16,
   "findings": {
-    "total": 162,
-    "fixed": 145,
+    "total": 163,
+    "fixed": 147,
     "partlyFixed": 6,
-    "open": 11
+    "open": 10
   },
   "research": {
     "questions": 43,
@@ -144,7 +150,7 @@
   },
   "corpusPages": 5045,
   "tests": {
-    "files": 235,
-    "count": 3553
+    "files": 238,
+    "count": 3614
   }
 }

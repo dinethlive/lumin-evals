@@ -55,7 +55,9 @@ ${(() => {
     "",
     `${r.swisseph.source}, at the same instants: mean node ${r.swisseph.meanNodeArcsec}″, true node ${r.swisseph.trueNodeArcsec}″, all twelve Placidus cusps and the ARMC ${r.swisseph.cuspArcsec}″.`,
     "",
-    `${r.spica.source}, Spica's apparent place at ${r.spica.epochs} epochs 1900 to 2050: the True Chitra ayanamsa within ${r.spica.trueChitraWorstArcsec}″. The same run measures the engine's Lahiri ${r.spica.lahiriGapArcsec}″ from Swiss Ephemeris's, which is an open finding.`,
+    `${r.spica.source}, Spica's apparent place at ${r.spica.epochs} epochs 1900 to 2050: the True Chitra ayanamsa within ${r.spica.trueChitraWorstArcsec}″.`,
+    "",
+    `${r.lahiri.source}, the Lahiri ayanamsa at ${r.lahiri.dates} dates ${r.lahiri.span}: within ${r.lahiri.worstArcsec}″ (bound ${r.lahiri.boundArcsec}″).`,
     "",
     `${r.eclipses.source}, ${r.eclipses.span}: ${r.eclipses.classified} of ${r.eclipses.canon} eclipses classified with their type.`,
   ].join("\n");
