@@ -1,6 +1,6 @@
 # Scorecard
 
-Exported from the audit record on 2026-09-29. The same figures are drawn at [https://lumin.guru/benchmarks](https://lumin.guru/benchmarks).
+Exported from the audit record on 2026-09-30. The same figures are drawn at [https://lumin.guru/benchmarks](https://lumin.guru/benchmarks).
 
 ## The core, layer by layer
 
@@ -81,7 +81,7 @@ No observation to check against, so the cusps are checked two ways: against thei
 
 | Findings | Fixed | Partly fixed | Open |
 | --- | --- | --- | --- |
-| 172 | 153 | 6 | 13 |
+| 178 | 154 | 8 | 16 |
 
 See [FINDINGS.md](FINDINGS.md) for every finding by id.
 

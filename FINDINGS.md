@@ -2,7 +2,7 @@
 
 Every finding the audit has raised against the engine, by status. A finding is a place where the engine and the printed KP books disagreed, or where a rule shipped with no source behind it. "Through" names the research questions the finding raised or was closed by.
 
-## Open (13)
+## Open (16)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
@@ -19,8 +19,11 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F232 | 2026-09-29 | gap | Which sunrise starts the day is a convention the engine chose without a source, and the Hindu alternatives sit 1 to 20 minutes from it, enough to change the day lord on 0.13% to 0.40% of births | Q044 |
 | F239 | 2026-09-29 | accuracy | JPL Horizons' apparent places of date carry the IERS celestial pole offsets and the engine's IAU 1976/1980 frame does not, a body-independent -0.066" to +0.123" in longitude that every Horizons oracle has been reading as the engine's own error |  |
 | F240 | 2026-09-29 | defect | One system's rule reaches another system's reading unlabelled, in fourteen places the BP029 layout review found |  |
+| F244 | 2026-09-30 | defect | A birth datetime sent with a zone suffix ("+06:00") is read as a true instant and then has utcOffsetMinutes subtracted again, so the one field where F064's contract applies breaks it silently, while every other date field reads the same suffix correctly |  |
+| F245 | 2026-09-30 | defect | Offsets for a moment other than the birth (judgement, horary query, election) default to the birth date's offset, fall back to the longitude's local mean time when a place is given without one, and stay fixed across a scan that crosses a daylight-saving change |  |
+| F246 | 2026-09-30 | defect | kp-agent's system context labels a negative offset that is not a whole hour one hour too far west (-210 minutes printed as "-4:30"), so the model reads two offsets that disagree |  |
 
-## Partly fixed (6)
+## Partly fixed (8)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
@@ -30,8 +33,10 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F106 | 2026-09-27 | defect | get_subsub_boundary's twin-divergence index says HIGH for 82% of random charts and LOW for none, and carries no scoreProvenance |  |
 | F144 | 2026-09-27 | provenance | Seven of the sixteen yogas run on Q031's paraphrase where the Tajikanilakanthi states different conditions, and the two called undefined are defined there |  |
 | F146 | 2026-09-27 | unsourced | The year-lord aspect gate tests each candidate against the ascendant with its own full deeptamsa, a reading no source states, and a sign-only gate picks a different year lord on 44% of charts |  |
+| F242 | 2026-09-30 | gap | A saved chart keeps only an integer UTC offset, with no zone and no record of where the offset came from, so the charts F241 saved wrong cannot be told from the right ones and a seconds-bearing offset cannot be stored |  |
+| F243 | 2026-09-30 | defect | Through kp-mcp and kp-agent a model types the UTC offset, the tool description never says it must be the offset in force at the birth, its only example invites the winter figure for a summer birth, and no zone can be given instead |  |
 
-## Fixed (153)
+## Fixed (154)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
@@ -188,6 +193,7 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F236 | 2026-09-29 | accuracy | Stations came from the geometric rate, not the apparent one, so every station ran early by about the light-time (Saturn 76 minutes on average, 123 worst); the clock went in as TT; and from a direct Venus or Mars no station was found at all |  |
 | F237 | 2026-09-29 | accuracy | The KP instant finders on the checked positions - transit crossings dropped a second boundary inside an hour (6 of 3,333 for the Moon in 2024, 3 of them sub-lord changes), and the mundane ingress chart was cast utcOffsetMinutes before the ingress |  |
 | F238 | 2026-09-29 | accuracy | The planets had no deflection of light by the Sun and were checked at fourteen instants that missed every conjunction and close approach, so Saturn sat 1.5" and Mars 1.35" off DE441 where the test never looked, and Jupiter's and Saturn's 0.4" was VSOP87's own floor, not its truncation |  |
+| F241 | 2026-09-30 | defect | The app's place picker gives every birth the UTC offset in force on the day of the lookup, and 0 when the geocoder has none, so a birth under any other rule gets a chart hours or minutes off with nothing to say so |  |
 
 ## Research questions (44)
 

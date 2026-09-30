@@ -1,5 +1,5 @@
 {
-  "exportedOn": "2026-09-29",
+  "exportedOn": "2026-09-30",
   "site": "https://lumin.guru/benchmarks",
   "layers": [
     {
@@ -136,10 +136,10 @@
   },
   "placidusWorstErrorArcsec": 0.16,
   "findings": {
-    "total": 172,
-    "fixed": 153,
-    "partlyFixed": 6,
-    "open": 13
+    "total": 178,
+    "fixed": 154,
+    "partlyFixed": 8,
+    "open": 16
   },
   "research": {
     "questions": 44,
