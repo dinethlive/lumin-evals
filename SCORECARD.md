@@ -1,6 +1,6 @@
 # Scorecard
 
-Exported from the audit record on 2026-09-30. The same figures are drawn at [https://lumin.guru/benchmarks](https://lumin.guru/benchmarks).
+Exported from the audit record on 2026-11-26. The same figures are drawn at [https://lumin.guru/benchmarks](https://lumin.guru/benchmarks).
 
 ## The core, layer by layer
 
@@ -81,7 +81,7 @@ No observation to check against, so the cusps are checked two ways: against thei
 
 | Findings | Fixed | Partly fixed | Open |
 | --- | --- | --- | --- |
-| 178 | 154 | 8 | 16 |
+| 197 | 175 | 10 | 12 |
 
 See [FINDINGS.md](FINDINGS.md) for every finding by id.
 
@@ -89,6 +89,6 @@ See [FINDINGS.md](FINDINGS.md) for every finding by id.
 
 | Corpus pages | Questions | Answered | Search keywords | Research reports | Report words |
 | --- | --- | --- | --- | --- | --- |
-| 5,045 | 44 | 43 | 1,340 | 50 | 206,772 |
+| 5,045 | 47 | 43 | 1,414 | 56 | 234,638 |
 
-The engine's own suite runs 3,712 tests across 246 files on every change.
+The engine's own suite runs 4,658 tests across 311 files on every change.

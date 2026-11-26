@@ -60,7 +60,8 @@
       "questions": [
         "Q015",
         "Q018",
-        "Q019"
+        "Q019",
+        "Q045"
       ]
     },
     {
@@ -181,7 +182,7 @@
       "id": "F017",
       "title": "\"'Legal Disputes / Court' is an occurrence gate that reads like an outcome gate, and puts the opponent's house on the required side\"",
       "kind": "defect",
-      "status": "open",
+      "status": "fixed",
       "raised": "2026-08-13",
       "questions": [
         "Q004",
@@ -840,7 +841,7 @@
       "id": "F082",
       "title": "get_mantra_recommendation names three loci and none carries a mantra rule, while the page that does discuss propitiation refuses it",
       "kind": "wrong-attribution",
-      "status": "open",
+      "status": "fixed",
       "raised": "2026-09-13",
       "questions": []
     },
@@ -903,7 +904,9 @@
       "kind": "provenance",
       "status": "fixed",
       "raised": "2026-09-27",
-      "questions": []
+      "questions": [
+        "Q045"
+      ]
     },
     {
       "id": "F090",
@@ -1627,7 +1630,7 @@
       "id": "F244",
       "title": "A birth datetime sent with a zone suffix (\"+06:00\") is read as a true instant and then has utcOffsetMinutes subtracted again, so the one field where F064's contract applies breaks it silently, while every other date field reads the same suffix correctly",
       "kind": "defect",
-      "status": "open",
+      "status": "fixed",
       "raised": "2026-09-30",
       "questions": []
     },
@@ -1635,7 +1638,7 @@
       "id": "F245",
       "title": "Offsets for a moment other than the birth (judgement, horary query, election) default to the birth date's offset, fall back to the longitude's local mean time when a place is given without one, and stay fixed across a scan that crosses a daylight-saving change",
       "kind": "defect",
-      "status": "open",
+      "status": "fixed",
       "raised": "2026-09-30",
       "questions": []
     },
@@ -1643,8 +1646,164 @@
       "id": "F246",
       "title": "kp-agent's system context labels a negative offset that is not a whole hour one hour too far west (-210 minutes printed as \"-4:30\"), so the model reads two offsets that disagree",
       "kind": "defect",
-      "status": "open",
+      "status": "fixed",
       "raised": "2026-09-30",
+      "questions": []
+    },
+    {
+      "id": "F247",
+      "title": "The reading protocol every client reads invalidates a transit on retrogression, lets combustion and planetary war soften a verdict, and states Parashari rules and Lumin orderings as KP",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-10-09",
+      "questions": []
+    },
+    {
+      "id": "F248",
+      "title": "A MIXED_ACTIVE cusp reaches the reader in four voices and three of them say promised or a settled sequence, so every spike reading that met one settled it",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-10-09",
+      "questions": []
+    },
+    {
+      "id": "F249",
+      "title": "Two tools take a moment that is not the birth in the field the schema calls the birth time, and the server tells the model to send the birth there",
+      "kind": "defect",
+      "status": "partly-fixed",
+      "raised": "2026-10-09",
+      "questions": []
+    },
+    {
+      "id": "F250",
+      "title": "The horary withhold and its \"fresh number\" remedy ship as KSK's rule, citing a page that does not state it, and every spike horary reading repeated them as settled",
+      "kind": "provenance",
+      "status": "partly-fixed",
+      "raised": "2026-10-09",
+      "questions": []
+    },
+    {
+      "id": "F251",
+      "title": "The routed plan sends tools that cannot run on the question asked, and lists a horary question's chart after 34 natal tools",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-10-09",
+      "questions": []
+    },
+    {
+      "id": "F252",
+      "title": "The replay fixtures read the wall clock through chart.currentDasha, so london-1978 went red on 2026-10-11 with no code change and both fixtures will go red again in November",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-10-20",
+      "questions": []
+    },
+    {
+      "id": "F253",
+      "title": "A query_date sent as a datetime without a zone is read in the server's time zone, so the same call returns a different current period on two servers",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-10-20",
+      "questions": []
+    },
+    {
+      "id": "F254",
+      "title": "A wall clock the clocks skipped is resolved, without a word, to the offset AFTER the change, an hour earlier than RFC 5545 and Temporal read it, in all three zone solvers",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-10-21",
+      "questions": []
+    },
+    {
+      "id": "F255",
+      "title": "get_career_blockage_diagnosis and get_promotion_verdict read the same Astro Secrets sentence (\"1 and 10 only\") two different ways, so one chart was stagnant in one tool and not in the other",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-10-21",
+      "questions": []
+    },
+    {
+      "id": "F256",
+      "title": "The transit routes judge the transits at query_datetime but read the running dasha at the wall clock, so Rule 1 and every event's verdict can name the wrong period, and a naive query_datetime is still read in the server's time zone",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-10-21",
+      "questions": []
+    },
+    {
+      "id": "F257",
+      "title": "A cuspal sub lord that also rules its own cusp was promoted from PARTIALLY_ACTIVE to ACTIVE at 0.67 coverage, a rule and a number no source states",
+      "kind": "unsourced",
+      "status": "fixed",
+      "raised": "2026-10-23",
+      "questions": []
+    },
+    {
+      "id": "F258",
+      "title": "get_annotated_dasha drops every event group a period lord reaches below 34% with nothing saying so, and judges isCurrent at the server's wall clock with no field to move it",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-10-23",
+      "questions": []
+    },
+    {
+      "id": "F259",
+      "title": "The transit timing hierarchy reads a start_date without a zone in the server's time zone, defaults the scan to a second reading of the wall clock where the call names a moment of judgement, and picks the event from the dasha running at the wall clock",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-10-23",
+      "questions": []
+    },
+    {
+      "id": "F260",
+      "title": "find_event_timing_v2 ran the transit hierarchy for candidatePeriods[0] from its start, so a chart whose highest-ranked period had already ended narrowed to a date in the past, and three notes still said the list was cut to ten",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-10-30",
+      "questions": [
+        "Q047"
+      ]
+    },
+    {
+      "id": "F261",
+      "title": "find_event_timing_v2's transit hierarchy is not bounded by the dasha period it was run for, so the narrowed window can fall years after that period ends",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-10-30",
+      "questions": [
+        "Q047"
+      ]
+    },
+    {
+      "id": "F262",
+      "title": "find_birth_time scanned from midnight in the server's time zone, parsed naive times in it, and subtracted the query offset from values that were already instants",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-11-04",
+      "questions": []
+    },
+    {
+      "id": "F263",
+      "title": "The four transit timers, the cure window and the weather cadence read a date without a zone in the server's time zone, and seven routes pick the event from the dasha running at the wall clock while judging another moment",
+      "kind": "defect",
+      "status": "fixed",
+      "raised": "2026-11-21",
+      "questions": []
+    },
+    {
+      "id": "F264",
+      "title": "Five Parashari citations still stated the Sharma chapter offset as +1 past Santhanam ch. 26, where Q040 read +2, and two of them printed a wrong Sharma chapter on the wire",
+      "kind": "provenance",
+      "status": "fixed",
+      "raised": "2026-11-21",
+      "questions": []
+    },
+    {
+      "id": "F265",
+      "title": "Three engine routes keep their own ayanamsa list without kp_new, and kp-mcp offers kp_new on all of them, so a documented value comes back as a 400",
+      "kind": "defect",
+      "status": "open",
+      "raised": "2026-11-26",
       "questions": []
     }
   ],
@@ -1868,6 +2027,21 @@
       "id": "Q044",
       "title": "Which sunrise starts the astrological day, for KP and for the Hindu traditions the engine serves?",
       "status": "answered"
+    },
+    {
+      "id": "Q045",
+      "title": "When the Moon does not reflect a horary question, does KSK withhold the judgement, and does he ask for a fresh number?",
+      "status": "open"
+    },
+    {
+      "id": "Q046",
+      "title": "Which lagnas have a yoga karaka in BPHS, which planet does each name, and what do the \"partial\" yoga karakas rest on?",
+      "status": "open"
+    },
+    {
+      "id": "Q047",
+      "title": "Does a KP transit window have to fall inside the dasha period it times, and at which dasha level is the Saturn, Jupiter, Sun, Moon narrowing run?",
+      "status": "open"
     }
   ]
 }

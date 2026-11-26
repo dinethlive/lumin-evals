@@ -1,5 +1,5 @@
 {
-  "exportedOn": "2026-09-30",
+  "exportedOn": "2026-11-26",
   "site": "https://lumin.guru/benchmarks",
   "layers": [
     {
@@ -136,21 +136,21 @@
   },
   "placidusWorstErrorArcsec": 0.16,
   "findings": {
-    "total": 178,
-    "fixed": 154,
-    "partlyFixed": 8,
-    "open": 16
+    "total": 197,
+    "fixed": 175,
+    "partlyFixed": 10,
+    "open": 12
   },
   "research": {
-    "questions": 44,
+    "questions": 47,
     "answered": 43,
-    "keywords": 1340,
-    "reports": 50,
-    "reportWords": 206772
+    "keywords": 1414,
+    "reports": 56,
+    "reportWords": 234638
   },
   "corpusPages": 5045,
   "tests": {
-    "files": 246,
-    "count": 3712
+    "files": 311,
+    "count": 4658
   }
 }

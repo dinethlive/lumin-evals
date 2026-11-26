@@ -2,28 +2,24 @@
 
 Every finding the audit has raised against the engine, by status. A finding is a place where the engine and the printed KP books disagreed, or where a rule shipped with no source behind it. "Through" names the research questions the finding raised or was closed by.
 
-## Open (16)
+## Open (12)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
-| F006 | 2026-08-13 | provenance | The engine cites two source trees and neither exists | Q015, Q018, Q019 |
+| F006 | 2026-08-13 | provenance | The engine cites two source trees and neither exists | Q015, Q018, Q019, Q045 |
 | F012 | 2026-08-13 | gap | The timing cascade advertises a Lagna tier it does not implement | Q002 |
-| F017 | 2026-08-13 | defect | "'Legal Disputes / Court' is an occurrence gate that reads like an outcome gate, and puts the opponent's house on the required side" | Q004, Q028 |
 | F031 | 2026-08-18 | unsourced | Thirteen definitions of STRONG, five scales, one vocabulary, and KP has no number at all | Q012, Q014, Q017, Q023, Q030, Q031, Q041 |
 | F056 | 2026-08-22 | unsourced | The weather verdict's rain and drought house sets match no stated convention, and put the 6th on the dry side | Q018 |
 | F081 | 2026-09-13 | wrong-attribution | The combustion grades use a per-planet table where Reader 1 prints one flat three-band rule, and the two disagree on 2.58% of planet rows |  |
-| F082 | 2026-09-13 | wrong-attribution | get_mantra_recommendation names three loci and none carries a mantra rule, while the page that does discuss propitiation refuses it |  |
 | F083 | 2026-09-13 | provenance | BPHS 27.34-36's Chesta minimum, as transmitted, sits above Chesta bala's own maximum, so no chart can pass that gate |  |
 | F084 | 2026-09-14 | provenance | KP's aspect orb table and its moiety rule are the Tajik deeptamsa doctrine, and one of its seven values is probably a damaged digit |  |
 | F166 | 2026-09-28 | provenance | The fruitful filter reads the Ruling Planets with no node rule, where the page that defines fruitful selection includes the nodes, and KSK's own Reader 6 rule (add the node) ships under the name "web-always-add" |  |
 | F232 | 2026-09-29 | gap | Which sunrise starts the day is a convention the engine chose without a source, and the Hindu alternatives sit 1 to 20 minutes from it, enough to change the day lord on 0.13% to 0.40% of births | Q044 |
 | F239 | 2026-09-29 | accuracy | JPL Horizons' apparent places of date carry the IERS celestial pole offsets and the engine's IAU 1976/1980 frame does not, a body-independent -0.066" to +0.123" in longitude that every Horizons oracle has been reading as the engine's own error |  |
 | F240 | 2026-09-29 | defect | One system's rule reaches another system's reading unlabelled, in fourteen places the BP029 layout review found |  |
-| F244 | 2026-09-30 | defect | A birth datetime sent with a zone suffix ("+06:00") is read as a true instant and then has utcOffsetMinutes subtracted again, so the one field where F064's contract applies breaks it silently, while every other date field reads the same suffix correctly |  |
-| F245 | 2026-09-30 | defect | Offsets for a moment other than the birth (judgement, horary query, election) default to the birth date's offset, fall back to the longitude's local mean time when a place is given without one, and stay fixed across a scan that crosses a daylight-saving change |  |
-| F246 | 2026-09-30 | defect | kp-agent's system context labels a negative offset that is not a whole hour one hour too far west (-210 minutes printed as "-4:30"), so the model reads two offsets that disagree |  |
+| F265 | 2026-11-26 | defect | Three engine routes keep their own ayanamsa list without kp_new, and kp-mcp offers kp_new on all of them, so a documented value comes back as a 400 |  |
 
-## Partly fixed (8)
+## Partly fixed (10)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
@@ -35,8 +31,10 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F146 | 2026-09-27 | unsourced | The year-lord aspect gate tests each candidate against the ascendant with its own full deeptamsa, a reading no source states, and a sign-only gate picks a different year lord on 44% of charts |  |
 | F242 | 2026-09-30 | gap | A saved chart keeps only an integer UTC offset, with no zone and no record of where the offset came from, so the charts F241 saved wrong cannot be told from the right ones and a seconds-bearing offset cannot be stored |  |
 | F243 | 2026-09-30 | defect | Through kp-mcp and kp-agent a model types the UTC offset, the tool description never says it must be the offset in force at the birth, its only example invites the winter figure for a summer birth, and no zone can be given instead |  |
+| F249 | 2026-10-09 | defect | Two tools take a moment that is not the birth in the field the schema calls the birth time, and the server tells the model to send the birth there |  |
+| F250 | 2026-10-09 | provenance | The horary withhold and its "fresh number" remedy ship as KSK's rule, citing a page that does not state it, and every spike horary reading repeated them as settled |  |
 
-## Fixed (154)
+## Fixed (175)
 
 | Id | Raised | Kind | Finding | Through |
 | --- | --- | --- | --- | --- |
@@ -53,6 +51,7 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F013 | 2026-08-13 | gap | Triple confirmation checks star and sub but never the sign | Q002, Q003, Q011, Q019, Q020 |
 | F014 | 2026-08-13 | defect | The KP ayanamsa was 85 arcminutes wrong, so 78% of all sub lords were one position off | Q003, Q005, Q010, Q011, Q019, Q024 |
 | F016 | 2026-08-13 | defect | The litigation verdict computed the sixth house, printed it, and then left it out of the comparison | Q004, Q010, Q021 |
+| F017 | 2026-08-13 | defect | "'Legal Disputes / Court' is an occurrence gate that reads like an outcome gate, and puts the opponent's house on the required side" | Q004, Q028 |
 | F018 | 2026-08-13 | defect | Ashtama Sani came back as a bare date range, which is the exact output four Reader 5 chapters exist to reject | Q004 |
 | F019 | 2026-08-13 | defect | The progeny denial group was missing the 10th, and the adoption rule was filed under miscarriage | Q007, Q010, Q021 |
 | F020 | 2026-08-13 | gap | Punarphoo has a Reader 4 chapter to itself as a marriage rule, and the engine computed it only inside the electional scan | Q008 |
@@ -112,11 +111,12 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F078 | 2026-09-13 | accuracy | The engine's Lahiri sits 14 to 15 arcseconds from Swiss Ephemeris's Lahiri, and had no external oracle until Spica arrived |  |
 | F079 | 2026-09-13 | accuracy | The eclipse screen misses every penumbral lunar eclipse (7 of 26 in 2000 to 2010) and passes one non-eclipse in 25 solar syzygies |  |
 | F080 | 2026-09-13 | correctness | Ashtottari and Yogini start the wrong lord, carry no balance at birth, and hand the wall clock in as UTC |  |
+| F082 | 2026-09-13 | wrong-attribution | get_mantra_recommendation names three loci and none carries a mantra rule, while the page that does discuss propitiation refuses it |  |
 | F085 | 2026-09-14 | provenance | The varshaphala year lord is the annual lagna lord taken unconditionally, and only the file header claims otherwise | Q034 |
 | F086 | 2026-09-14 | provenance | Patyayini was never blocked on panchavargeeya bala, and four documents said it was | Q035, Q036 |
 | F087 | 2026-09-14 | correctness | get_multi_system_verdict's documented house_group path never worked, and omitting the optional event returned a 500 |  |
 | F088 | 2026-09-27 | defect | run_triple_dasha_consensus rewrites the event name before resolving it, and reports one overlap as both a triple and a double |  |
-| F089 | 2026-09-27 | provenance | run_triple_dasha_consensus calls three systems independent and returns STRONG for most charts, because two of its three inputs ignore the event |  |
+| F089 | 2026-09-27 | provenance | run_triple_dasha_consensus calls three systems independent and returns STRONG for most charts, because two of its three inputs ignore the event | Q045 |
 | F090 | 2026-09-27 | provenance | get_reading_protocol tells agents that concordance between systems is a stronger prediction, and contradicts itself on Ashtakoota and the D charts |  |
 | F091 | 2026-09-27 | gap | get_paradigm_panel declares TIMING_DIVERGENCE but no reader returns a window, so timing is never compared, and its Jaimini column still predates Q032 |  |
 | F092 | 2026-09-27 | defect | The first mahadasha divides its balance among all nine bhuktis, which KSK forbids in so many words |  |
@@ -194,8 +194,27 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | F237 | 2026-09-29 | accuracy | The KP instant finders on the checked positions - transit crossings dropped a second boundary inside an hour (6 of 3,333 for the Moon in 2024, 3 of them sub-lord changes), and the mundane ingress chart was cast utcOffsetMinutes before the ingress |  |
 | F238 | 2026-09-29 | accuracy | The planets had no deflection of light by the Sun and were checked at fourteen instants that missed every conjunction and close approach, so Saturn sat 1.5" and Mars 1.35" off DE441 where the test never looked, and Jupiter's and Saturn's 0.4" was VSOP87's own floor, not its truncation |  |
 | F241 | 2026-09-30 | defect | The app's place picker gives every birth the UTC offset in force on the day of the lookup, and 0 when the geocoder has none, so a birth under any other rule gets a chart hours or minutes off with nothing to say so |  |
+| F244 | 2026-09-30 | defect | A birth datetime sent with a zone suffix ("+06:00") is read as a true instant and then has utcOffsetMinutes subtracted again, so the one field where F064's contract applies breaks it silently, while every other date field reads the same suffix correctly |  |
+| F245 | 2026-09-30 | defect | Offsets for a moment other than the birth (judgement, horary query, election) default to the birth date's offset, fall back to the longitude's local mean time when a place is given without one, and stay fixed across a scan that crosses a daylight-saving change |  |
+| F246 | 2026-09-30 | defect | kp-agent's system context labels a negative offset that is not a whole hour one hour too far west (-210 minutes printed as "-4:30"), so the model reads two offsets that disagree |  |
+| F247 | 2026-10-09 | defect | The reading protocol every client reads invalidates a transit on retrogression, lets combustion and planetary war soften a verdict, and states Parashari rules and Lumin orderings as KP |  |
+| F248 | 2026-10-09 | defect | A MIXED_ACTIVE cusp reaches the reader in four voices and three of them say promised or a settled sequence, so every spike reading that met one settled it |  |
+| F251 | 2026-10-09 | defect | The routed plan sends tools that cannot run on the question asked, and lists a horary question's chart after 34 natal tools |  |
+| F252 | 2026-10-20 | defect | The replay fixtures read the wall clock through chart.currentDasha, so london-1978 went red on 2026-10-11 with no code change and both fixtures will go red again in November |  |
+| F253 | 2026-10-20 | defect | A query_date sent as a datetime without a zone is read in the server's time zone, so the same call returns a different current period on two servers |  |
+| F254 | 2026-10-21 | defect | A wall clock the clocks skipped is resolved, without a word, to the offset AFTER the change, an hour earlier than RFC 5545 and Temporal read it, in all three zone solvers |  |
+| F255 | 2026-10-21 | defect | get_career_blockage_diagnosis and get_promotion_verdict read the same Astro Secrets sentence ("1 and 10 only") two different ways, so one chart was stagnant in one tool and not in the other |  |
+| F256 | 2026-10-21 | defect | The transit routes judge the transits at query_datetime but read the running dasha at the wall clock, so Rule 1 and every event's verdict can name the wrong period, and a naive query_datetime is still read in the server's time zone |  |
+| F257 | 2026-10-23 | unsourced | A cuspal sub lord that also rules its own cusp was promoted from PARTIALLY_ACTIVE to ACTIVE at 0.67 coverage, a rule and a number no source states |  |
+| F258 | 2026-10-23 | defect | get_annotated_dasha drops every event group a period lord reaches below 34% with nothing saying so, and judges isCurrent at the server's wall clock with no field to move it |  |
+| F259 | 2026-10-23 | defect | The transit timing hierarchy reads a start_date without a zone in the server's time zone, defaults the scan to a second reading of the wall clock where the call names a moment of judgement, and picks the event from the dasha running at the wall clock |  |
+| F260 | 2026-10-30 | defect | find_event_timing_v2 ran the transit hierarchy for candidatePeriods[0] from its start, so a chart whose highest-ranked period had already ended narrowed to a date in the past, and three notes still said the list was cut to ten | Q047 |
+| F261 | 2026-10-30 | defect | find_event_timing_v2's transit hierarchy is not bounded by the dasha period it was run for, so the narrowed window can fall years after that period ends | Q047 |
+| F262 | 2026-11-04 | defect | find_birth_time scanned from midnight in the server's time zone, parsed naive times in it, and subtracted the query offset from values that were already instants |  |
+| F263 | 2026-11-21 | defect | The four transit timers, the cure window and the weather cadence read a date without a zone in the server's time zone, and seven routes pick the event from the dasha running at the wall clock while judging another moment |  |
+| F264 | 2026-11-21 | provenance | Five Parashari citations still stated the Sharma chapter offset as +1 past Santhanam ch. 26, where Q040 read +2, and two of them printed a wrong Sharma chapter on the wire |  |
 
-## Research questions (44)
+## Research questions (47)
 
 | Id | Status | Question |
 | --- | --- | --- |
@@ -243,3 +262,6 @@ Every finding the audit has raised against the engine, by status. A finding is a
 | Q042 | answered | In BPHS, how is Bhava Dig bala computed and what is the twilight of the +15, what do Sudarshana vv. 15-16 and 27-28 say, and do the Sudarshana months of each year start from the 1st bhava or from that year's bhava? |
 | Q043 | answered | Where do the Parashari texts state the MD-AD relationship rule, the dasha lord's valence, the node's dasha reading and the varga-lagna rule; do Rahu and Ketu cast graha drishti; and what are the Saptavarga and Dasavarga Vimsopaka weights? |
 | Q044 | answered | Which sunrise starts the astrological day, for KP and for the Hindu traditions the engine serves? |
+| Q045 | open | When the Moon does not reflect a horary question, does KSK withhold the judgement, and does he ask for a fresh number? |
+| Q046 | open | Which lagnas have a yoga karaka in BPHS, which planet does each name, and what do the "partial" yoga karakas rest on? |
+| Q047 | open | Does a KP transit window have to fall inside the dasha period it times, and at which dasha level is the Saturn, Jupiter, Sun, Moon narrowing run? |
